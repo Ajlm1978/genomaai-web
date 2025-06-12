@@ -11,9 +11,20 @@ const HeroSection = () => {
 
   return (
     <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
-      {/* Animated background gradient */}
+      {/* Animated background gradient with neural network aesthetics */}
       <div className="absolute inset-0 animated-bg" />
       
+      {/* Futuristic grid overlay */}
+      <div className="absolute inset-0 opacity-10">
+        <div className="absolute inset-0" style={{
+          backgroundImage: `
+            linear-gradient(hsl(var(--primary) / 0.1) 1px, transparent 1px),
+            linear-gradient(90deg, hsl(var(--primary) / 0.1) 1px, transparent 1px)
+          `,
+          backgroundSize: '50px 50px'
+        }} />
+      </div>
+
       {/* Hero content */}
       <div className="relative z-10 text-center max-w-4xl mx-auto px-6">
         <div className={`transition-all duration-1000 ${isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
@@ -48,11 +59,19 @@ const HeroSection = () => {
         </div>
       </div>
 
-      {/* Decorative elements */}
+      {/* Futuristic decorative elements - data streams and neural connections */}
       <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-primary rounded-full animate-float" />
       <div className="absolute top-1/3 right-1/3 w-1 h-1 bg-secondary rounded-full animate-float" style={{ animationDelay: '2s' }} />
       <div className="absolute bottom-1/3 left-1/3 w-1.5 h-1.5 bg-primary rounded-full animate-float" style={{ animationDelay: '4s' }} />
       <div className="absolute bottom-1/4 right-1/4 w-1 h-1 bg-secondary rounded-full animate-float" style={{ animationDelay: '1s' }} />
+      
+      {/* Neural network connection lines */}
+      <div className="absolute top-1/2 left-1/4 w-px h-12 bg-gradient-to-b from-primary/40 to-transparent animate-pulse" style={{ animationDelay: '3s' }} />
+      <div className="absolute top-1/3 right-1/4 w-16 h-px bg-gradient-to-r from-secondary/40 to-transparent animate-pulse" style={{ animationDelay: '1.5s' }} />
+      
+      {/* Quantum-inspired energy particles */}
+      <div className="absolute top-1/5 left-1/2 w-0.5 h-0.5 bg-primary rounded-full animate-phoenix-energy" />
+      <div className="absolute bottom-1/5 right-1/2 w-0.5 h-0.5 bg-secondary rounded-full animate-phoenix-energy" style={{ animationDelay: '2.5s' }} />
     </section>
   );
 };
