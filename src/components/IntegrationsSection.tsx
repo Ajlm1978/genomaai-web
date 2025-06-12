@@ -1,0 +1,46 @@
+
+import React from 'react';
+
+const integrations = [
+  { name: 'Slack', logo: '💬' },
+  { name: 'Salesforce', logo: '☁️' },
+  { name: 'Microsoft', logo: '🔷' },
+  { name: 'Google', logo: '🔍' },
+  { name: 'Zapier', logo: '⚡' },
+  { name: 'HubSpot', logo: '🧡' },
+  { name: 'Zoom', logo: '📹' },
+  { name: 'Stripe', logo: '💳' }
+];
+
+const IntegrationsSection = () => {
+  return (
+    <section className="py-24 px-6 relative">
+      <div className="max-w-5xl mx-auto text-center">
+        <h2 className="text-4xl font-bold mb-6">
+          <span className="gradient-text">Seamless Integrations</span>
+        </h2>
+        <p className="text-xl text-gray-300 mb-12">
+          Connect with your existing tools and platforms effortlessly
+        </p>
+
+        <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
+          {integrations.map((integration, index) => (
+            <div
+              key={index}
+              className="flex flex-col items-center group cursor-pointer transition-all duration-300 hover:scale-110"
+            >
+              <div className="text-4xl mb-2 group-hover:scale-125 transition-transform duration-300">
+                {integration.logo}
+              </div>
+              <span className="text-gray-400 group-hover:text-white transition-colors duration-300">
+                {integration.name}
+              </span>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default IntegrationsSection;
