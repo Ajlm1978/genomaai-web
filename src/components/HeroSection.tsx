@@ -28,6 +28,15 @@ const HeroSection = () => {
       {/* Hero content */}
       <div className="relative z-10 text-center max-w-4xl mx-auto px-6">
         <div className={`transition-all duration-1000 ${isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
+          {/* Fenix AI Logo */}
+          <div className="mb-8 flex justify-center">
+            <img 
+              src="/lovable-uploads/a00d25a5-a11a-40fd-9ce4-a1b39b824f3b.png" 
+              alt="Fenix AI Logo" 
+              className="w-48 h-48 md:w-64 md:h-64 object-contain animate-float"
+            />
+          </div>
+          
           <h1 className="text-6xl md:text-8xl font-bold mb-6 leading-tight">
             <span className="gradient-text">AI that works</span>
             <br />

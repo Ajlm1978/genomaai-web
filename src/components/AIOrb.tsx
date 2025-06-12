@@ -135,10 +135,11 @@ const AIOrb = () => {
             {/* Header */}
             <div className="flex items-center justify-between p-4 border-b border-white/10">
               <div className="flex items-center gap-3">
-                <div className="w-8 h-8 rounded-full phoenix-core relative">
-                  <div className="w-full h-full rounded-full bg-gradient-to-br from-primary to-secondary" />
-                  <div className="absolute inset-0 phoenix-particle w-1 h-1 bg-primary rounded-full animate-float top-1 left-2" />
-                </div>
+                <img 
+                  src="/lovable-uploads/a00d25a5-a11a-40fd-9ce4-a1b39b824f3b.png" 
+                  alt="Fenix AI" 
+                  className="w-8 h-8 object-contain"
+                />
                 <div>
                   <h3 className="font-semibold text-white">Fenix AI Phoenix</h3>
                   <p className="text-sm text-gray-400">Rising to assist you</p>
