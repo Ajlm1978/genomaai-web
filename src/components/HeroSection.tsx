@@ -29,11 +29,11 @@ const HeroSection = () => {
       <div className="relative z-10 text-center max-w-4xl mx-auto px-6">
         <div className={`transition-all duration-1000 ${isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
           {/* Fenix AI Logo */}
-          <div className="mb-8 flex justify-center">
+          <div className="mb-12 flex justify-center">
             <img 
-              src="/lovable-uploads/a00d25a5-a11a-40fd-9ce4-a1b39b824f3b.png" 
+              src="/lovable-uploads/20064f45-841d-4aaa-9962-36705f0ed220.png" 
               alt="Fenix AI Logo" 
-              className="w-48 h-48 md:w-64 md:h-64 object-contain animate-float"
+              className="w-32 h-32 md:w-40 md:h-40 object-contain animate-float opacity-90"
             />
           </div>
           

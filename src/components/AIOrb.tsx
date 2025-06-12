@@ -136,9 +136,9 @@ const AIOrb = () => {
             <div className="flex items-center justify-between p-4 border-b border-white/10">
               <div className="flex items-center gap-3">
                 <img 
-                  src="/lovable-uploads/a00d25a5-a11a-40fd-9ce4-a1b39b824f3b.png" 
+                  src="/lovable-uploads/20064f45-841d-4aaa-9962-36705f0ed220.png" 
                   alt="Fenix AI" 
-                  className="w-8 h-8 object-contain"
+                  className="w-10 h-10 object-contain opacity-90"
                 />
                 <div>
                   <h3 className="font-semibold text-white">Fenix AI Phoenix</h3>
