@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { X, Send } from 'lucide-react';
@@ -135,9 +134,12 @@ const AIOrb = () => {
             {/* Header */}
             <div className="flex items-center justify-between p-4 border-b border-white/10">
               <div className="flex items-center gap-3">
-                <div className="w-8 h-8 rounded-full phoenix-core relative">
-                  <div className="w-full h-full rounded-full bg-gradient-to-br from-primary to-secondary" />
-                  <div className="absolute inset-0 phoenix-particle w-1 h-1 bg-primary rounded-full animate-float top-1 left-2" />
+                <div className="w-10 h-10 relative">
+                  <img 
+                    src="/lovable-uploads/9ebab790-8202-4b9d-9137-74a1b30fd19b.png" 
+                    alt="Fenix AI" 
+                    className="w-full h-full object-contain"
+                  />
                 </div>
                 <div>
                   <h3 className="font-semibold text-white">Fenix AI Phoenix</h3>

@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from 'react';
 import { Button } from '@/components/ui/button';
 
@@ -28,6 +27,15 @@ const HeroSection = () => {
       {/* Hero content */}
       <div className="relative z-10 text-center max-w-4xl mx-auto px-6">
         <div className={`transition-all duration-1000 ${isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
+          {/* Fenix AI Logo */}
+          <div className="mb-8 flex justify-center">
+            <img 
+              src="/lovable-uploads/9ebab790-8202-4b9d-9137-74a1b30fd19b.png" 
+              alt="Fenix AI Logo" 
+              className="h-20 w-auto md:h-24 lg:h-28 drop-shadow-2xl glow-primary"
+            />
+          </div>
+          
           <h1 className="text-6xl md:text-8xl font-bold mb-6 leading-tight">
             <span className="gradient-text">AI that works</span>
             <br />
