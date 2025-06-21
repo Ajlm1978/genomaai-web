@@ -14,6 +14,15 @@ const HeroSection = () => {
       {/* Animated background gradient with neural network aesthetics */}
       <div className="absolute inset-0 animated-bg" />
       
+      {/* Logo Watermark */}
+      <div className="absolute inset-0 flex items-center justify-center opacity-5">
+        <img 
+          src="/lovable-uploads/b9740711-e184-4541-9258-66b8ab025f0e.png" 
+          alt="Fenix AI Logo" 
+          className="w-96 h-96 object-contain"
+        />
+      </div>
+      
       {/* Futuristic grid overlay */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute inset-0" style={{
@@ -65,11 +74,9 @@ const HeroSection = () => {
       <div className="absolute bottom-1/3 left-1/3 w-1.5 h-1.5 bg-primary rounded-full animate-float" style={{ animationDelay: '4s' }} />
       <div className="absolute bottom-1/4 right-1/4 w-1 h-1 bg-secondary rounded-full animate-float" style={{ animationDelay: '1s' }} />
       
-      {/* Neural network connection lines */}
       <div className="absolute top-1/2 left-1/4 w-px h-12 bg-gradient-to-b from-primary/40 to-transparent animate-pulse" style={{ animationDelay: '3s' }} />
       <div className="absolute top-1/3 right-1/4 w-16 h-px bg-gradient-to-r from-secondary/40 to-transparent animate-pulse" style={{ animationDelay: '1.5s' }} />
       
-      {/* Quantum-inspired energy particles */}
       <div className="absolute top-1/5 left-1/2 w-0.5 h-0.5 bg-primary rounded-full animate-phoenix-energy" />
       <div className="absolute bottom-1/5 right-1/2 w-0.5 h-0.5 bg-secondary rounded-full animate-phoenix-energy" style={{ animationDelay: '2.5s' }} />
     </section>
