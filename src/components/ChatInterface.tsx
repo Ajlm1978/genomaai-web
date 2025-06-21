@@ -50,12 +50,8 @@ const ChatInterface = ({
         {/* Header */}
         <div className="flex items-center justify-between p-4 border-b border-white/10">
           <div className="flex items-center gap-3">
-            <div className="w-8 h-8 rounded-full overflow-hidden">
-              <img 
-                src="/lovable-uploads/b9740711-e184-4541-9258-66b8ab025f0e.png" 
-                alt="Fenix AI" 
-                className="w-full h-full object-contain"
-              />
+            <div className="w-8 h-8 rounded-full bg-gradient-to-r from-primary to-secondary flex items-center justify-center">
+              <span className="text-white font-bold text-sm">F</span>
             </div>
             <div>
               <h3 className="font-semibold text-white">Fenix AI</h3>
