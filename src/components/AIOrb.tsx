@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { X, Send } from 'lucide-react';
@@ -136,7 +137,7 @@ const AIOrb = () => {
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 relative">
                   <img 
-                    src="/lovable-uploads/9ebab790-8202-4b9d-9137-74a1b30fd19b.png" 
+                    src="/lovable-uploads/27f8bf99-e217-431b-b92b-0d4832d67666.png" 
                     alt="Fenix AI" 
                     className="w-full h-full object-contain"
                   />

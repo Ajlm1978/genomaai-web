@@ -1,3 +1,4 @@
+
 import React, { useEffect, useState } from 'react';
 import { Button } from '@/components/ui/button';
 
@@ -12,6 +13,15 @@ const HeroSection = () => {
     <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
       {/* Animated background gradient with neural network aesthetics */}
       <div className="absolute inset-0 animated-bg" />
+      
+      {/* Background logo */}
+      <div className="absolute inset-0 flex items-center justify-center opacity-5">
+        <img 
+          src="/lovable-uploads/27f8bf99-e217-431b-b92b-0d4832d67666.png" 
+          alt="Fenix AI Background" 
+          className="w-96 h-96 object-contain"
+        />
+      </div>
       
       {/* Futuristic grid overlay */}
       <div className="absolute inset-0 opacity-10">
@@ -30,9 +40,9 @@ const HeroSection = () => {
           {/* Fenix AI Logo */}
           <div className="mb-8 flex justify-center">
             <img 
-              src="/lovable-uploads/9ebab790-8202-4b9d-9137-74a1b30fd19b.png" 
+              src="/lovable-uploads/27f8bf99-e217-431b-b92b-0d4832d67666.png" 
               alt="Fenix AI Logo" 
-              className="h-20 w-auto md:h-24 lg:h-28 drop-shadow-2xl glow-primary"
+              className="h-24 w-auto md:h-28 lg:h-32 drop-shadow-2xl glow-primary"
             />
           </div>
           
