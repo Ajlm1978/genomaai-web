@@ -14,15 +14,6 @@ const HeroSection = () => {
       {/* Animated background gradient with neural network aesthetics */}
       <div className="absolute inset-0 animated-bg" />
       
-      {/* Background logo */}
-      <div className="absolute inset-0 flex items-center justify-center opacity-5">
-        <img 
-          src="/lovable-uploads/27f8bf99-e217-431b-b92b-0d4832d67666.png" 
-          alt="Fenix AI Background" 
-          className="w-96 h-96 object-contain"
-        />
-      </div>
-      
       {/* Futuristic grid overlay */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute inset-0" style={{
@@ -37,15 +28,6 @@ const HeroSection = () => {
       {/* Hero content */}
       <div className="relative z-10 text-center max-w-4xl mx-auto px-6">
         <div className={`transition-all duration-1000 ${isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
-          {/* Fenix AI Logo */}
-          <div className="mb-8 flex justify-center">
-            <img 
-              src="/lovable-uploads/27f8bf99-e217-431b-b92b-0d4832d67666.png" 
-              alt="Fenix AI Logo" 
-              className="h-24 w-auto md:h-28 lg:h-32 drop-shadow-2xl glow-primary"
-            />
-          </div>
-          
           <h1 className="text-6xl md:text-8xl font-bold mb-6 leading-tight">
             <span className="gradient-text">AI that works</span>
             <br />
