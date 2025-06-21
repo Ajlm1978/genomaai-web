@@ -10,7 +10,7 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
+    <section className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20">
       {/* Animated background gradient with neural network aesthetics */}
       <div className="absolute inset-0 animated-bg" />
       
