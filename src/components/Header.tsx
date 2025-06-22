@@ -19,7 +19,7 @@ const Header = () => {
           <div className="flex items-center gap-3">
             <div className="w-10 h-10 rounded-full overflow-hidden">
               <img 
-                src="/lovable-uploads/2527d7d3-8c86-4ece-90c4-cc624a2bba43.png" 
+                src="/lovable-uploads/b786050e-9f4e-47ed-9196-92f840bc316b.png" 
                 alt="Fenix AI Logo" 
                 className="w-full h-full object-contain"
               />
