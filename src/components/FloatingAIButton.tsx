@@ -14,7 +14,7 @@ const FloatingAIButton = () => {
       <Button
         onClick={handleClick}
         size="lg"
-        className="w-16 h-16 rounded-full bg-gradient-to-r from-primary to-secondary hover:from-primary/80 hover:to-secondary/80 text-white shadow-xl glow-primary group transition-all duration-300 hover:scale-110 animate-pulse"
+        className="w-16 h-16 rounded-full bg-gradient-to-r from-primary to-secondary hover:from-primary/80 hover:to-secondary/80 text-white shadow-xl glow-primary group transition-all duration-300 hover:scale-105 animate-gentle-float"
       >
         <Brain className="w-8 h-8 transition-transform duration-300 group-hover:scale-110" />
       </Button>

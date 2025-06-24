@@ -157,6 +157,16 @@
 }
 
 @layer utilities {
+  /* Gentle floating animation for AI button */
+  @keyframes gentle-float {
+    0%, 100% { 
+      transform: translateY(0px); 
+    }
+    50% { 
+      transform: translateY(-8px); 
+    }
+  }
+
   /* Phoenix animations */
   @keyframes phoenix-aura-pulse {
     0%, 100% { 
@@ -266,6 +276,10 @@
 
   .animate-phoenix-awaken {
     animation: phoenix-awaken 1.5s ease-out forwards;
+  }
+
+  .animate-gentle-float {
+    animation: gentle-float 3s ease-in-out infinite;
   }
 
   .animate-typewriter {
