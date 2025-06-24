@@ -8,6 +8,7 @@ import UseCasesSection from '@/components/UseCasesSection';
 import TestimonialsSection from '@/components/TestimonialsSection';
 import IntegrationsSection from '@/components/IntegrationsSection';
 import CTASection from '@/components/CTASection';
+import FloatingAIButton from '@/components/FloatingAIButton';
 
 const Index = () => {
   return (
@@ -29,6 +30,9 @@ const Index = () => {
 
       {/* AI Orb */}
       <AIOrb />
+      
+      {/* Floating AI Assistant Button */}
+      <FloatingAIButton />
     </div>
   );
 };
