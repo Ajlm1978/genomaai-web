@@ -14,6 +14,15 @@ const HeroSection = () => {
       {/* Animated background gradient with neural network aesthetics */}
       <div className="absolute inset-0 animated-bg" />
       
+      {/* Logo watermark background */}
+      <div className="absolute inset-0 flex items-center justify-center opacity-5 pointer-events-none">
+        <img 
+          src="/lovable-uploads/32cc264e-2fe8-4971-8b6f-f3a757df4d31.png" 
+          alt="Fenix AI Watermark" 
+          className="w-96 h-96 object-contain"
+        />
+      </div>
+      
       {/* Futuristic grid overlay */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute inset-0" style={{
