@@ -36,10 +36,11 @@ const AssistantSection = () => {
         <div className="glass-card max-w-3xl mx-auto p-8 hover:glow-primary transition-all duration-500">
           <div className="flex justify-center items-center">
             <iframe 
-              src="https://iframes.ai/o/1749696865351x574001650352259100?color=4d4c50&icon=bot"
+              src="https://iframes.ai/o/1749696865351x574001650352259100?color=3a1ce9&icon=bot"
               allow="microphone"
-              className="w-full h-80 md:h-96 border-none rounded-lg"
+              className="w-full h-50 border-none rounded-lg"
               title="AI Assistant"
+              id="assistantFrame"
             />
           </div>
         </div>
