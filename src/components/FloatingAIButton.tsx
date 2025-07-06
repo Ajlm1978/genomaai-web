@@ -4,9 +4,11 @@ import { Brain } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const FloatingAIButton = () => {
+  const aiAgentId = '1749679509357x537924320321077250';
+  
   const handleClick = () => {
-    // TODO: Connect to AI assistant functionality
-    console.log('AI Assistant button clicked');
+    // TODO: Connect to AI assistant functionality with agent ID
+    console.log('AI Assistant button clicked with agent ID:', aiAgentId);
   };
 
   return (
