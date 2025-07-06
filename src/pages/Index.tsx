@@ -31,7 +31,7 @@ const Index = () => {
       <AIOrb />
       
       {/* ElevenLabs Conversational AI Widget */}
-      <elevenlabs-convai agent-id="agent_01jx1g7q2gf3t9zcggrsnwyrv5"></elevenlabs-convai>
+      <elevenlabs-convai agent-id="1749679509357x537924320321077250"></elevenlabs-convai>
     </div>
   );
 };
