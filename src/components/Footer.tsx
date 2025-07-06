@@ -84,8 +84,8 @@ const Footer = () => {
             <div className="mt-6">
               <p className="text-xs text-gray-500">
                 Contact us: <br />
-                <a href="mailto:info@fenixai.com" className="text-primary hover:text-primary/80">
-                  info@fenixai.com
+                <a href="mailto:info@fenixaiconsulting.com" className="text-primary hover:text-primary/80">
+                  info@fenixaiconsulting.com
                 </a>
               </p>
             </div>
