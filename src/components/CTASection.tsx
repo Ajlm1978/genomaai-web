@@ -13,11 +13,9 @@ const CTASection = () => {
         </p>
         
         <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-          <Button size="lg" className="bg-gradient-to-r from-primary to-secondary hover:from-primary/80 hover:to-secondary/80 text-white font-semibold px-12 py-6 text-xl glow-primary transition-all duration-300 hover:scale-105">Talk to our AI </Button>
+          <Button size="lg" className="bg-gradient-to-r from-primary to-secondary hover:from-primary/80 hover:to-secondary/80 text-white font-semibold px-12 py-6 text-xl glow-primary transition-all duration-300 hover:scale-105">Book your Demo now</Button>
           
-          <Button variant="outline" size="lg" className="border-white/20 text-white hover:bg-white/10 font-semibold px-12 py-6 text-xl transition-all duration-300 hover:scale-105">
-            Schedule Demo
-          </Button>
+          
         </div>
 
         

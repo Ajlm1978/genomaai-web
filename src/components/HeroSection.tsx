@@ -45,9 +45,7 @@ const HeroSection = () => {
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
             <Button size="lg" className="bg-gradient-to-r from-primary to-secondary hover:from-primary/80 hover:to-secondary/80 text-white font-semibold px-8 py-4 text-lg glow-primary transition-all duration-300 hover:scale-105">Book your Demo now</Button>
             
-            <Button variant="outline" size="lg" className="border-white/20 text-white hover:bg-white/10 font-semibold px-8 py-4 text-lg transition-all duration-300 hover:scale-105">
-              Learn More
-            </Button>
+            
           </div>
         </div>
       </div>
