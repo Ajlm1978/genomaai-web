@@ -29,6 +29,9 @@ const IntegrationsSection = () => {
               key={index}
               className="flex flex-col items-center group cursor-pointer transition-all duration-300 hover:scale-110"
             >
+              <div className="text-4xl mb-2 group-hover:scale-125 transition-transform duration-300 group-hover:animate-pulse">
+                {integration.logo}
+              </div>
               <span className="text-gray-400 group-hover:text-white transition-colors duration-300">
                 {integration.name}
               </span>
