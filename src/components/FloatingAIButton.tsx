@@ -6,7 +6,7 @@ import { useVoiceConversation } from '@/hooks/useVoiceConversation';
 import { useToast } from '@/hooks/use-toast';
 
 const FloatingAIButton = () => {
-  const aiAgentId = '1749679509357x537924320321077250';
+  const aiAgentId = 'agent_01jx1g7q2gf3t9zcggrsnwyrv5';
   const { toast } = useToast();
   
   const { 
