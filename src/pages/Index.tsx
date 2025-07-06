@@ -8,7 +8,6 @@ import UseCasesSection from '@/components/UseCasesSection';
 import TestimonialsSection from '@/components/TestimonialsSection';
 import IntegrationsSection from '@/components/IntegrationsSection';
 import CTASection from '@/components/CTASection';
-import FloatingAIButton from '@/components/FloatingAIButton';
 
 const Index = () => {
   return (
@@ -31,8 +30,8 @@ const Index = () => {
       {/* AI Orb */}
       <AIOrb />
       
-      {/* Floating AI Assistant Button */}
-      <FloatingAIButton />
+      {/* ElevenLabs Conversational AI Widget */}
+      <elevenlabs-convai agent-id="agent_01jx1g7q2gf3t9zcggrsnwyrv5"></elevenlabs-convai>
     </div>
   );
 };
