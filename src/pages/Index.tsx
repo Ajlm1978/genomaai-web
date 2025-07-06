@@ -7,8 +7,12 @@ import UseCasesSection from '@/components/UseCasesSection';
 import TestimonialsSection from '@/components/TestimonialsSection';
 import IntegrationsSection from '@/components/IntegrationsSection';
 import CTASection from '@/components/CTASection';
+import VoiceAssistantButton from '@/components/VoiceAssistantButton';
+import ChatAssistantButton from '@/components/ChatAssistantButton';
 
 const Index = () => {
+  const agentId = '1749679509357x537924320321077250';
+
   return (
     <div className="min-h-screen bg-background text-foreground relative overflow-x-hidden">
       {/* Particle background */}
@@ -25,6 +29,10 @@ const Index = () => {
         <IntegrationsSection />
         <CTASection />
       </main>
+
+      {/* AI Assistant Buttons */}
+      <VoiceAssistantButton agentId={agentId} />
+      <ChatAssistantButton agentId={agentId} />
     </div>
   );
 };
