@@ -7,18 +7,27 @@ import { useConversation } from '@/hooks/useConversation';
 const AIOrb = () => {
   const [isExpanded, setIsExpanded] = useState(false);
   const [isAwakening, setIsAwakening] = useState(false);
-  const { messages, isTyping, addUserMessage, initializeConversation } = useConversation();
+  const { messages, isTyping, addUserMessage, initializeConversation, conversation } = useConversation();
 
-  const handlePhoenixClick = () => {
+  const handlePhoenixClick = async () => {
     setIsAwakening(true);
+    
+    // Initialize ElevenLabs conversation
+    await initializeConversation();
+    
     setTimeout(() => {
       setIsExpanded(true);
       setIsAwakening(false);
     }, 1500);
   };
 
-  const handleClose = () => {
+  const handleClose = async () => {
     setIsExpanded(false);
+    
+    // End the ElevenLabs conversation when closing
+    if (conversation.status === 'connected') {
+      await conversation.endSession();
+    }
   };
 
   return (
