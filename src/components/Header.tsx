@@ -1,5 +1,5 @@
 
-import React from 'react';
+import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import {
   NavigationMenu,
@@ -9,8 +9,13 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
+import ChatInterface from '@/components/ChatInterface';
+import { useConversation } from '@/hooks/useConversation';
 
 const Header = () => {
+  const [isChatOpen, setIsChatOpen] = useState(false);
+  const { messages, isTyping, addUserMessage, initializeConversation } = useConversation();
+
   return (
     <header className="fixed top-0 left-0 right-0 z-50 glass border-b border-white/10">
       <div className="container mx-auto px-6 py-4">
@@ -126,13 +131,23 @@ const Header = () => {
             <Button 
               size="sm"
               className="bg-gradient-to-r from-primary to-secondary hover:from-primary/80 hover:to-secondary/80 text-white font-semibold glow-primary"
-              onClick={() => window.open(`https://app.dante-ai.com/chatbot/${1749679509357}x${537924320321077250}`, '_blank')}
+              onClick={() => setIsChatOpen(true)}
             >
               Chat Assistant
             </Button>
           </div>
         </div>
       </div>
+
+      {/* Chat Interface */}
+      <ChatInterface
+        isExpanded={isChatOpen}
+        onClose={() => setIsChatOpen(false)}
+        messages={messages}
+        isTyping={isTyping}
+        onSendMessage={addUserMessage}
+        onInitialize={initializeConversation}
+      />
     </header>
   );
 };
