@@ -87,6 +87,10 @@ const Footer = () => {
                 <a href="mailto:info@fenixaiconsulting.com" className="text-primary hover:text-primary/80">
                   info@fenixaiconsulting.com
                 </a>
+                <br />
+                <a href="tel:+17862337574" className="text-primary hover:text-primary/80">
+                  +1 (786) 233-7574
+                </a>
               </p>
             </div>
           </div>

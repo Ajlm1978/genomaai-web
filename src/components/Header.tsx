@@ -43,46 +43,92 @@ const Header = () => {
                   Solutions
                 </NavigationMenuTrigger>
                 <NavigationMenuContent>
-                  <div className="glass p-4 w-48">
-                    <NavigationMenuLink className="block text-white hover:text-primary transition-colors px-2 py-1 text-sm">
-                      Automation
-                    </NavigationMenuLink>
-                    <NavigationMenuLink className="block text-white hover:text-primary transition-colors px-2 py-1 text-sm">
-                      Analytics
-                    </NavigationMenuLink>
-                    <NavigationMenuLink className="block text-white hover:text-primary transition-colors px-2 py-1 text-sm">
-                      Integration
-                    </NavigationMenuLink>
+                  <div className="glass p-4 w-64 bg-background/95 backdrop-blur-md border border-white/10">
+                    <div className="space-y-1">
+                      <NavigationMenuLink className="block text-white hover:text-primary transition-colors px-2 py-1 text-sm">
+                        Sales AI Assistant
+                      </NavigationMenuLink>
+                      <NavigationMenuLink className="block text-white hover:text-primary transition-colors px-2 py-1 text-sm">
+                        Inventory Management AI
+                      </NavigationMenuLink>
+                      <NavigationMenuLink className="block text-white hover:text-primary transition-colors px-2 py-1 text-sm">
+                        Collections & Billing AI
+                      </NavigationMenuLink>
+                      <NavigationMenuLink className="block text-white hover:text-primary transition-colors px-2 py-1 text-sm">
+                        Social Media AI
+                      </NavigationMenuLink>
+                      <NavigationMenuLink className="block text-white hover:text-primary transition-colors px-2 py-1 text-sm">
+                        Lead Prospector AI
+                      </NavigationMenuLink>
+                      <NavigationMenuLink className="block text-white hover:text-primary transition-colors px-2 py-1 text-sm">
+                        Customer Service AI
+                      </NavigationMenuLink>
+                      <NavigationMenuLink className="block text-white hover:text-primary transition-colors px-2 py-1 text-sm">
+                        Marketing Automation AI
+                      </NavigationMenuLink>
+                      <NavigationMenuLink className="block text-white hover:text-primary transition-colors px-2 py-1 text-sm">
+                        Data Analytics AI
+                      </NavigationMenuLink>
+                      <NavigationMenuLink className="block text-white hover:text-primary transition-colors px-2 py-1 text-sm">
+                        HR Assistant AI
+                      </NavigationMenuLink>
+                      <NavigationMenuLink className="block text-white hover:text-primary transition-colors px-2 py-1 text-sm">
+                        Financial Planning AI
+                      </NavigationMenuLink>
+                    </div>
                   </div>
                 </NavigationMenuContent>
               </NavigationMenuItem>
               <NavigationMenuItem>
-                <NavigationMenuLink className="text-white hover:text-primary transition-colors px-4 py-2 text-sm font-medium">
+                <NavigationMenuTrigger className="text-white hover:text-primary transition-colors text-sm font-medium">
                   About
-                </NavigationMenuLink>
+                </NavigationMenuTrigger>
+                <NavigationMenuContent>
+                  <div className="glass p-4 w-80 bg-background/95 backdrop-blur-md border border-white/10">
+                    <p className="text-white text-sm leading-relaxed">
+                      Empowering businesses with cutting-edge AI solutions and intelligent automation.
+                    </p>
+                  </div>
+                </NavigationMenuContent>
               </NavigationMenuItem>
               <NavigationMenuItem>
-                <NavigationMenuLink className="text-white hover:text-primary transition-colors px-4 py-2 text-sm font-medium">
+                <NavigationMenuTrigger className="text-white hover:text-primary transition-colors text-sm font-medium">
                   Contact
-                </NavigationMenuLink>
+                </NavigationMenuTrigger>
+                <NavigationMenuContent>
+                  <div className="glass p-4 w-64 bg-background/95 backdrop-blur-md border border-white/10">
+                    <div className="space-y-2 text-sm">
+                      <div>
+                        <p className="text-gray-400">Email:</p>
+                        <a href="mailto:info@fenixaiconsulting.com" className="text-primary hover:text-primary/80">
+                          info@fenixaiconsulting.com
+                        </a>
+                      </div>
+                      <div>
+                        <p className="text-gray-400">Phone:</p>
+                        <a href="tel:+17862337574" className="text-primary hover:text-primary/80">
+                          +1 (786) 233-7574
+                        </a>
+                      </div>
+                      <div>
+                        <p className="text-gray-400">Location:</p>
+                        <p className="text-white">Winter Park, Florida, USA</p>
+                      </div>
+                    </div>
+                  </div>
+                </NavigationMenuContent>
               </NavigationMenuItem>
             </NavigationMenuList>
           </NavigationMenu>
 
-          {/* CTA Buttons */}
-          <div className="flex items-center gap-4">
-            <Button 
-              variant="outline" 
-              size="sm"
-              className="hidden sm:flex border-white/20 text-white hover:bg-white/10"
-            >
-              Sign In
-            </Button>
+          {/* Chat Assistant Button */}
+          <div className="flex items-center">
             <Button 
               size="sm"
               className="bg-gradient-to-r from-primary to-secondary hover:from-primary/80 hover:to-secondary/80 text-white font-semibold glow-primary"
+              onClick={() => window.open(`https://app.dante-ai.com/chatbot/${1749679509357}x${537924320321077250}`, '_blank')}
             >
-              Get Started
+              Chat Assistant
             </Button>
           </div>
         </div>
