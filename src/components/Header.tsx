@@ -1,5 +1,5 @@
 
-import React, { useState } from 'react';
+import React from 'react';
 import { Button } from '@/components/ui/button';
 import {
   NavigationMenu,
@@ -9,12 +9,14 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
-import ChatInterface from '@/components/ChatInterface';
-import { useConversation } from '@/hooks/useConversation';
 
 const Header = () => {
-  const [isChatOpen, setIsChatOpen] = useState(false);
-  const { messages, isTyping, addUserMessage, initializeConversation } = useConversation();
+  const handleWhatsAppClick = () => {
+    const phoneNumber = '17862337574';
+    const message = 'Hola, me interesa conocer más sobre Fenix AI';
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, '_blank');
+  };
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 glass border-b border-white/10">
@@ -131,7 +133,7 @@ const Header = () => {
             <Button 
               size="sm"
               className="bg-gradient-to-r from-primary to-secondary hover:from-primary/80 hover:to-secondary/80 text-white font-semibold glow-primary"
-              onClick={() => setIsChatOpen(true)}
+              onClick={handleWhatsAppClick}
             >
               Chat Assistant
             </Button>
@@ -139,15 +141,6 @@ const Header = () => {
         </div>
       </div>
 
-      {/* Chat Interface */}
-      <ChatInterface
-        isExpanded={isChatOpen}
-        onClose={() => setIsChatOpen(false)}
-        messages={messages}
-        isTyping={isTyping}
-        onSendMessage={addUserMessage}
-        onInitialize={initializeConversation}
-      />
     </header>
   );
 };
