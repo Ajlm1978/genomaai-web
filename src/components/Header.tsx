@@ -12,7 +12,7 @@ import {
 
 const Header = () => {
   const handleWhatsAppClick = () => {
-    const phoneNumber = '17862337574';
+    const phoneNumber = '17869484685';
     const message = 'Hola, me interesa conocer más sobre Fenix AI';
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
@@ -113,8 +113,8 @@ const Header = () => {
                       </div>
                       <div>
                         <p className="text-gray-400">Phone:</p>
-                        <a href="tel:+17862337574" className="text-primary hover:text-primary/80">
-                          +1 (786) 233-7574
+                        <a href="tel:+17869484685" className="text-primary hover:text-primary/80">
+                          +1 (786) 948-4685
                         </a>
                       </div>
                       <div>

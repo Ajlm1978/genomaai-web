@@ -18,7 +18,7 @@ const WhatsAppPopup: React.FC<WhatsAppPopupProps> = ({ onClose }) => {
   }, []);
 
   const handleWhatsAppClick = () => {
-    const phoneNumber = '17862337574';
+    const phoneNumber = '17869484685';
     const message = 'Hola, me interesa conocer más sobre Fenix AI';
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
