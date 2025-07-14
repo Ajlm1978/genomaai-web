@@ -47,7 +47,7 @@ const WhatsAppPopup: React.FC<WhatsAppPopupProps> = ({ onClose }) => {
         {/* WhatsApp button */}
         <button
           onClick={handleWhatsAppClick}
-          className="w-14 h-14 bg-[#25D366] hover:bg-[#128C7E] rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 animate-pulse hover:animate-none hover:scale-105"
+          className="w-14 h-14 bg-[#25D366] hover:bg-[#128C7E] rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 animate-gentle-float hover:animate-none hover:scale-105"
           aria-label="Contactar por WhatsApp"
         >
           {/* WhatsApp Logo SVG */}
