@@ -119,7 +119,9 @@ const Header = () => {
                       </div>
                       <div>
                         <p className="text-gray-400">Location:</p>
-                        <p className="text-white">Winter Park, Florida, USA</p>
+                        <p className="text-white">3001 Aloma Ave</p>
+                        <p className="text-white">Suite 212</p>
+                        <p className="text-white">Winter Park, FL 32792</p>
                       </div>
                     </div>
                   </div>

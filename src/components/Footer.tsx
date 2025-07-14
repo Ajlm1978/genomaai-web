@@ -29,7 +29,9 @@ const Footer = () => {
               Empowering businesses with cutting-edge AI solutions and intelligent automation.
             </p>
             <div className="text-sm text-gray-400">
-              <p>Winter Park, Florida, USA</p>
+              <p>3001 Aloma Ave</p>
+              <p>Suite 212</p>
+              <p>Winter Park, FL 32792</p>
             </div>
           </div>
 

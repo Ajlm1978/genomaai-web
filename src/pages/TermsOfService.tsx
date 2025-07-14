@@ -165,7 +165,9 @@ const TermsOfService = () => {
               </p>
               <div className="bg-gray-800/50 p-4 rounded-lg">
                 <p><strong>Fenix AI</strong></p>
-                <p>Winter Park, Florida, USA</p>
+                <p>3001 Aloma Ave</p>
+                <p>Suite 212</p>
+                <p>Winter Park, FL 32792</p>
                 <p>Email: legal@fenixaiconsulting.com</p>
               </div>
             </section>
