@@ -5,11 +5,15 @@ const ParticleField = () => {
   const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    // Check if we're in a browser environment
+    if (typeof window === 'undefined') return;
+    
     const container = containerRef.current;
     if (!container) return;
 
-    // Create particles
-    const particles = Array.from({ length: 50 }, (_, i) => {
+    try {
+      // Create particles
+      const particles = Array.from({ length: 50 }, (_, i) => {
       const particle = document.createElement('div');
       particle.className = 'particle';
       particle.style.left = `${Math.random() * 100}%`;
@@ -19,15 +23,18 @@ const ParticleField = () => {
       return particle;
     });
 
-    particles.forEach(particle => container.appendChild(particle));
+      particles.forEach(particle => container.appendChild(particle));
 
-    return () => {
-      particles.forEach(particle => {
-        if (container.contains(particle)) {
-          container.removeChild(particle);
-        }
-      });
-    };
+      return () => {
+        particles.forEach(particle => {
+          if (container.contains(particle)) {
+            container.removeChild(particle);
+          }
+        });
+      };
+    } catch (error) {
+      console.error('Error creating particles:', error);
+    }
   }, []);
 
   return (
