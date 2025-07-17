@@ -1,10 +1,12 @@
 
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { Button } from '@/components/ui/button';
 import { ArrowLeft } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 
 const PrivacyPolicy = () => {
+  const { t } = useTranslation(['common', 'legal']);
   const navigate = useNavigate();
 
   return (
@@ -16,11 +18,11 @@ const PrivacyPolicy = () => {
           className="mb-8 text-primary hover:text-primary/80"
         >
           <ArrowLeft className="w-4 h-4 mr-2" />
-          Back to Home
+          {t('common:buttons.backToHome')}
         </Button>
 
         <div className="glass-card p-8">
-          <h1 className="text-4xl font-bold mb-8 gradient-text">Privacy Policy</h1>
+          <h1 className="text-4xl font-bold mb-8 gradient-text">{t('legal:privacyPolicy.title')}</h1>
           
           <div className="space-y-6 text-gray-300">
             <p className="text-sm text-gray-400">

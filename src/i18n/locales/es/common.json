@@ -1,0 +1,30 @@
+{
+  "navigation": {
+    "home": "Inicio",
+    "solutions": "Soluciones",
+    "about": "Acerca de",
+    "contact": "Contacto"
+  },
+  "buttons": {
+    "getStarted": "Comenzar",
+    "learnMore": "Saber Más",
+    "chatAssistant": "Asistente Virtual",
+    "backToHome": "Volver al Inicio",
+    "contactUs": "Contáctanos",
+    "scheduleDemo": "Agendar Demo"
+  },
+  "contact": {
+    "email": "Correo",
+    "phone": "Teléfono",
+    "address": "Dirección"
+  },
+  "legal": {
+    "privacyPolicy": "Política de Privacidad",
+    "termsOfService": "Términos de Servicio",
+    "allRightsReserved": "Todos los derechos reservados",
+    "governedBy": "Regido por las leyes de"
+  },
+  "whatsapp": {
+    "message": "¡Hola! Estoy interesado en conocer más sobre las soluciones de Fenix AI. ¿Podrían proporcionarme más información sobre sus servicios?"
+  }
+}

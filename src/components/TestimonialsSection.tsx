@@ -1,40 +1,41 @@
 
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
-const testimonials = [
-  {
-    quote: "Fenix AI transformed our customer support. Response times dropped by 80% and satisfaction scores hit all-time highs.",
-    author: "Sarah Chen",
-    role: "CTO",
-    company: "TechFlow Solutions",
-    avatar: "👩‍💼"
-  },
-  {
-    quote: "The predictive analytics capabilities helped us increase revenue by 35% in just 6 months. Game-changing technology.",
-    author: "Marcus Rodriguez",
-    role: "VP Sales",
-    company: "Growth Dynamics",
-    avatar: "👨‍💼"
-  },
-  {
-    quote: "Implementation was seamless and the ROI was immediate. Our team productivity increased by 60% across the board.",
-    author: "Elena Petrov",
-    role: "Operations Director",
-    company: "Quantum Industries",
-    avatar: "👩‍💻"
-  }
-];
 
 const TestimonialsSection = () => {
+  const { t } = useTranslation('homepage');
+  
+  const testimonials = [
+    {
+      textKey: 'testimonials.testimonial1.text',
+      nameKey: 'testimonials.testimonial1.name',
+      companyKey: 'testimonials.testimonial1.company',
+      avatar: "👩‍💼"
+    },
+    {
+      textKey: 'testimonials.testimonial2.text',
+      nameKey: 'testimonials.testimonial2.name',
+      companyKey: 'testimonials.testimonial2.company',
+      avatar: "👨‍💼"
+    },
+    {
+      textKey: 'testimonials.testimonial3.text',
+      nameKey: 'testimonials.testimonial3.name',
+      companyKey: 'testimonials.testimonial3.company',
+      avatar: "👩‍💻"
+    }
+  ];
+
   return (
     <section className="py-24 px-6 relative">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-6">
-            <span className="gradient-text">Trusted by Industry Leaders</span>
+            <span className="gradient-text">{t('testimonials.title')}</span>
           </h2>
           <p className="text-xl text-gray-300">
-            See what our clients say about their Fenix AI experience
+            {t('testimonials.subtitle')}
           </p>
         </div>
 
@@ -47,12 +48,11 @@ const TestimonialsSection = () => {
             >
               <div className="text-2xl mb-4">{testimonial.avatar}</div>
               <blockquote className="text-gray-300 mb-6 leading-relaxed">
-                "{testimonial.quote}"
+                "{t(testimonial.textKey)}"
               </blockquote>
               <div className="text-white">
-                <div className="font-semibold">{testimonial.author}</div>
-                <div className="text-sm text-gray-400">{testimonial.role}</div>
-                <div className="text-sm gradient-text font-medium">{testimonial.company}</div>
+                <div className="font-semibold">{t(testimonial.nameKey)}</div>
+                <div className="text-sm gradient-text font-medium">{t(testimonial.companyKey)}</div>
               </div>
             </div>
           ))}

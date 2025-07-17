@@ -1,7 +1,10 @@
 
 import React, { useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 
 const AssistantSection = () => {
+  const { t } = useTranslation('homepage');
+  
   useEffect(() => {
     const handleMicrophonePermissions = () => {
       if (navigator.permissions) {
@@ -27,10 +30,10 @@ const AssistantSection = () => {
     <section className="py-24 px-6 relative">
       <div className="max-w-4xl mx-auto text-center">
         <h2 className="text-4xl font-bold mb-6">
-          Meet Our <span className="gradient-text">AI Assistant</span>
+          {t('assistant.title')}
         </h2>
         <p className="text-xl text-gray-300 mb-12">
-          Experience the power of conversational AI. Ask questions, get insights, and interact naturally with our advanced assistant.
+          {t('assistant.subtitle')}
         </p>
 
         <div className="glass-card max-w-3xl mx-auto p-8 glow-primary glow-secondary animate-glow-pulse transition-all duration-500">

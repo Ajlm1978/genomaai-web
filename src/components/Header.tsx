@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { Button } from '@/components/ui/button';
 import {
   NavigationMenu,
@@ -9,11 +10,14 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
+import LanguageSwitcher from './LanguageSwitcher';
 
 const Header = () => {
+  const { t } = useTranslation('common');
+  
   const handleWhatsAppClick = () => {
     const phoneNumber = '17869484685';
-    const message = 'Hola, me interesa conocer más sobre Fenix AI';
+    const message = t('whatsapp.message');
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };
@@ -42,12 +46,12 @@ const Header = () => {
             <NavigationMenuList>
               <NavigationMenuItem>
                 <NavigationMenuLink className="text-white hover:text-primary transition-colors px-4 py-2 text-sm font-medium">
-                  Home
+                  {t('navigation.home')}
                 </NavigationMenuLink>
               </NavigationMenuItem>
               <NavigationMenuItem>
                 <NavigationMenuTrigger className="text-white hover:text-primary transition-colors text-sm font-medium">
-                  Solutions
+                  {t('navigation.solutions')}
                 </NavigationMenuTrigger>
                 <NavigationMenuContent>
                   <div className="glass p-4 w-64 bg-background/95 backdrop-blur-md border border-white/10">
@@ -88,7 +92,7 @@ const Header = () => {
               </NavigationMenuItem>
               <NavigationMenuItem>
                 <NavigationMenuTrigger className="text-white hover:text-primary transition-colors text-sm font-medium">
-                  About
+                  {t('navigation.about')}
                 </NavigationMenuTrigger>
                 <NavigationMenuContent>
                   <div className="glass p-4 w-80 bg-background/95 backdrop-blur-md border border-white/10">
@@ -100,25 +104,25 @@ const Header = () => {
               </NavigationMenuItem>
               <NavigationMenuItem>
                 <NavigationMenuTrigger className="text-white hover:text-primary transition-colors text-sm font-medium">
-                  Contact
+                  {t('navigation.contact')}
                 </NavigationMenuTrigger>
                 <NavigationMenuContent>
                   <div className="glass p-4 w-64 bg-background/95 backdrop-blur-md border border-white/10">
                     <div className="space-y-2 text-sm">
                       <div>
-                        <p className="text-gray-400">Email:</p>
+                        <p className="text-gray-400">{t('contact.email')}:</p>
                         <a href="mailto:info@fenixaiconsulting.com" className="text-primary hover:text-primary/80">
                           info@fenixaiconsulting.com
                         </a>
                       </div>
                       <div>
-                        <p className="text-gray-400">Phone:</p>
+                        <p className="text-gray-400">{t('contact.phone')}:</p>
                         <a href="tel:+17869484685" className="text-primary hover:text-primary/80">
                           +1 (786) 948-4685
                         </a>
                       </div>
                       <div>
-                        <p className="text-gray-400">Location:</p>
+                        <p className="text-gray-400">{t('contact.address')}:</p>
                         <p className="text-white">3001 Aloma Ave</p>
                         <p className="text-white">Suite 212</p>
                         <p className="text-white">Winter Park, FL 32792</p>
@@ -130,14 +134,15 @@ const Header = () => {
             </NavigationMenuList>
           </NavigationMenu>
 
-          {/* Chat Assistant Button */}
-          <div className="flex items-center">
+          {/* Language Switcher and Chat Assistant Button */}
+          <div className="flex items-center gap-4">
+            <LanguageSwitcher />
             <Button 
               size="sm"
               className="bg-gradient-to-r from-primary to-secondary hover:from-primary/80 hover:to-secondary/80 text-white font-semibold glow-primary"
               onClick={handleWhatsAppClick}
             >
-              Chat Assistant
+              {t('buttons.chatAssistant')}
             </Button>
           </div>
         </div>

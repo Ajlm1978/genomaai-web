@@ -1,0 +1,75 @@
+{
+  "hero": {
+    "title": "Transform Your Business with AI-Powered Automation",
+    "subtitle": "Fenix AI revolutionizes your operations with intelligent automation solutions. Boost efficiency, reduce costs, and scale your business with our cutting-edge artificial intelligence technology.",
+    "cta": "Start Your AI Journey"
+  },
+  "useCases": {
+    "title": "AI Solutions for Every Industry",
+    "subtitle": "Discover how Fenix AI transforms businesses across sectors",
+    "healthcare": {
+      "title": "Healthcare",
+      "description": "Automated patient data analysis, medical image recognition, and treatment optimization."
+    },
+    "finance": {
+      "title": "Finance",
+      "description": "Risk assessment, fraud detection, and automated financial analysis."
+    },
+    "manufacturing": {
+      "title": "Manufacturing",
+      "description": "Predictive maintenance, quality control, and production optimization."
+    },
+    "retail": {
+      "title": "Retail",
+      "description": "Inventory management, customer behavior analysis, and personalized recommendations."
+    },
+    "logistics": {
+      "title": "Logistics",
+      "description": "Route optimization, demand forecasting, and supply chain automation."
+    },
+    "education": {
+      "title": "Education",
+      "description": "Personalized learning, automated grading, and student performance analytics."
+    }
+  },
+  "testimonials": {
+    "title": "What Our Clients Say",
+    "subtitle": "Real results from real businesses",
+    "testimonial1": {
+      "text": "Fenix AI has transformed our operations completely. We've seen a 40% increase in efficiency and significant cost reductions.",
+      "name": "Sarah Johnson",
+      "company": "TechCorp Solutions"
+    },
+    "testimonial2": {
+      "text": "The AI automation solutions provided by Fenix have streamlined our processes and improved our decision-making capabilities.",
+      "name": "Michael Chen",
+      "company": "Global Industries"
+    },
+    "testimonial3": {
+      "text": "Outstanding results! Our productivity has increased by 35% since implementing Fenix AI solutions.",
+      "name": "Emily Rodriguez",
+      "company": "Innovation Labs"
+    }
+  },
+  "assistant": {
+    "title": "Your AI Assistant is Ready",
+    "subtitle": "Get instant answers about our AI solutions",
+    "placeholder": "Ask me anything about Fenix AI...",
+    "responses": {
+      "greeting": "Hello! I'm your Fenix AI assistant. How can I help you today?",
+      "services": "We offer AI automation solutions for healthcare, finance, manufacturing, retail, logistics, and education. Which industry interests you?",
+      "pricing": "Our pricing is customized based on your specific needs. Would you like to schedule a consultation to discuss your requirements?",
+      "demo": "I'd be happy to arrange a demo for you! Please contact us through WhatsApp or email to schedule a personalized demonstration.",
+      "integration": "Our AI solutions integrate seamlessly with existing systems. We provide full support during implementation and beyond.",
+      "default": "That's a great question! For detailed information, I recommend contacting our team directly through WhatsApp or email."
+    }
+  },
+  "cta": {
+    "title": "Ready to Transform Your Business?",
+    "subtitle": "Join hundreds of companies already using Fenix AI to revolutionize their operations",
+    "description": "Don't let your competitors get ahead. Start your AI transformation today and experience the power of intelligent automation."
+  },
+  "footer": {
+    "description": "Fenix AI is a leading provider of artificial intelligence solutions for business automation. We help companies across industries optimize their operations, reduce costs, and accelerate growth through cutting-edge AI technology."
+  }
+}

@@ -1,9 +1,12 @@
 
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { Separator } from '@/components/ui/separator';
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
+  const { t } = useTranslation(['common', 'homepage']);
+  
   return (
     <footer className="relative z-10 mt-24">
       <Separator className="mb-12" />
@@ -26,7 +29,7 @@ const Footer = () => {
               </div>
             </div>
             <p className="text-gray-400 text-sm">
-              Empowering businesses with cutting-edge AI solutions and intelligent automation.
+              {t('homepage:footer.description')}
             </p>
             <div className="text-sm text-gray-400">
               <p>3001 Aloma Ave</p>
@@ -43,25 +46,25 @@ const Footer = () => {
                 to="/" 
                 className="block text-gray-400 hover:text-primary transition-colors text-sm"
               >
-                Home
+                {t('common:navigation.home')}
               </Link>
               <a 
                 href="#services" 
                 className="block text-gray-400 hover:text-primary transition-colors text-sm"
               >
-                Services
+                {t('common:navigation.solutions')}
               </a>
               <a 
                 href="#about" 
                 className="block text-gray-400 hover:text-primary transition-colors text-sm"
               >
-                About
+                {t('common:navigation.about')}
               </a>
               <a 
                 href="#contact" 
                 className="block text-gray-400 hover:text-primary transition-colors text-sm"
               >
-                Contact
+                {t('common:navigation.contact')}
               </a>
             </div>
           </div>
@@ -74,13 +77,13 @@ const Footer = () => {
                 to="/privacy-policy" 
                 className="block text-gray-400 hover:text-primary transition-colors text-sm"
               >
-                Privacy Policy
+                {t('common:legal.privacyPolicy')}
               </Link>
               <Link 
                 to="/terms-of-service" 
                 className="block text-gray-400 hover:text-primary transition-colors text-sm"
               >
-                Terms of Service
+                {t('common:legal.termsOfService')}
               </Link>
             </div>
             <div className="mt-6">
@@ -103,10 +106,10 @@ const Footer = () => {
         {/* Copyright */}
         <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           <p className="text-gray-400 text-sm">
-            © 2025 Fenix AI. All rights reserved.
+            © 2025 Fenix AI. {t('common:legal.allRightsReserved')}
           </p>
           <p className="text-gray-500 text-xs">
-            Governed by the laws of the State of Florida, USA
+            {t('common:legal.governedBy')} Florida, USA
           </p>
         </div>
       </div>

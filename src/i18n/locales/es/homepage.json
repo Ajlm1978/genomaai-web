@@ -1,0 +1,75 @@
+{
+  "hero": {
+    "title": "Transforma Tu Negocio con Automatización Impulsada por IA",
+    "subtitle": "Fenix AI revoluciona tus operaciones con soluciones de automatización inteligente. Aumenta la eficiencia, reduce costos y escala tu negocio con nuestra tecnología de inteligencia artificial de vanguardia.",
+    "cta": "Inicia Tu Viaje con IA"
+  },
+  "useCases": {
+    "title": "Soluciones de IA para Cada Industria",
+    "subtitle": "Descubre cómo Fenix AI transforma empresas en todos los sectores",
+    "healthcare": {
+      "title": "Salud",
+      "description": "Análisis automatizado de datos de pacientes, reconocimiento de imágenes médicas y optimización de tratamientos."
+    },
+    "finance": {
+      "title": "Finanzas",
+      "description": "Evaluación de riesgos, detección de fraudes y análisis financiero automatizado."
+    },
+    "manufacturing": {
+      "title": "Manufactura",
+      "description": "Mantenimiento predictivo, control de calidad y optimización de la producción."
+    },
+    "retail": {
+      "title": "Retail",
+      "description": "Gestión de inventarios, análisis del comportamiento del cliente y recomendaciones personalizadas."
+    },
+    "logistics": {
+      "title": "Logística",
+      "description": "Optimización de rutas, pronóstico de demanda y automatización de la cadena de suministro."
+    },
+    "education": {
+      "title": "Educación",
+      "description": "Aprendizaje personalizado, calificación automatizada y análisis del rendimiento estudiantil."
+    }
+  },
+  "testimonials": {
+    "title": "Lo Que Dicen Nuestros Clientes",
+    "subtitle": "Resultados reales de empresas reales",
+    "testimonial1": {
+      "text": "Fenix AI ha transformado completamente nuestras operaciones. Hemos visto un aumento del 40% en eficiencia y reducciones significativas de costos.",
+      "name": "María González",
+      "company": "TechCorp Solutions"
+    },
+    "testimonial2": {
+      "text": "Las soluciones de automatización de IA proporcionadas por Fenix han agilizado nuestros procesos y mejorado nuestras capacidades de toma de decisiones.",
+      "name": "Carlos Martínez",
+      "company": "Industrias Globales"
+    },
+    "testimonial3": {
+      "text": "¡Resultados excepcionales! Nuestra productividad ha aumentado un 35% desde la implementación de las soluciones de Fenix AI.",
+      "name": "Ana Rodríguez",
+      "company": "Laboratorios de Innovación"
+    }
+  },
+  "assistant": {
+    "title": "Tu Asistente de IA Está Listo",
+    "subtitle": "Obtén respuestas instantáneas sobre nuestras soluciones de IA",
+    "placeholder": "Pregúntame cualquier cosa sobre Fenix AI...",
+    "responses": {
+      "greeting": "¡Hola! Soy tu asistente de Fenix AI. ¿Cómo puedo ayudarte hoy?",
+      "services": "Ofrecemos soluciones de automatización de IA para salud, finanzas, manufactura, retail, logística y educación. ¿Qué industria te interesa?",
+      "pricing": "Nuestros precios se personalizan según tus necesidades específicas. ¿Te gustaría agendar una consulta para discutir tus requerimientos?",
+      "demo": "¡Me encantaría organizar una demostración para ti! Por favor contáctanos a través de WhatsApp o correo para agendar una demostración personalizada.",
+      "integration": "Nuestras soluciones de IA se integran perfectamente con sistemas existentes. Proporcionamos soporte completo durante la implementación y más allá.",
+      "default": "¡Esa es una excelente pregunta! Para información detallada, recomiendo contactar directamente a nuestro equipo a través de WhatsApp o correo."
+    }
+  },
+  "cta": {
+    "title": "¿Listo para Transformar Tu Negocio?",
+    "subtitle": "Únete a cientos de empresas que ya usan Fenix AI para revolucionar sus operaciones",
+    "description": "No dejes que tus competidores se adelanten. Comienza tu transformación con IA hoy y experimenta el poder de la automatización inteligente."
+  },
+  "footer": {
+    "description": "Fenix AI es un proveedor líder de soluciones de inteligencia artificial para automatización empresarial. Ayudamos a empresas de todas las industrias a optimizar sus operaciones, reducir costos y acelerar el crecimiento a través de tecnología de IA de vanguardia."
+  }
+}

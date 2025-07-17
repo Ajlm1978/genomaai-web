@@ -1,8 +1,11 @@
 
 import React, { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { Button } from '@/components/ui/button';
 const HeroSection = () => {
+  const { t } = useTranslation('homepage');
   const [isVisible, setIsVisible] = useState(false);
+  
   useEffect(() => {
     setIsVisible(true);
   }, []);
@@ -31,16 +34,12 @@ const HeroSection = () => {
       {/* Hero content */}
       <div className="relative z-10 text-center max-w-4xl mx-auto px-6">
         <div className={`transition-all duration-1000 ${isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
-          <h1 className="text-6xl md:text-8xl font-bold mb-6 leading-tight">
-            <span className="gradient-text">AI that works</span>
-            <br />
-            <span className="text-white">with you,</span>
-            <br />
-            <span className="text-white">not for you</span>
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+            <span className="gradient-text">{t('hero.title')}</span>
           </h1>
           
           <p className="text-xl md:text-2xl text-gray-300 mb-12 max-w-2xl mx-auto leading-relaxed">
-            Automate tasks. Personalize processes. Scale intelligently.
+            {t('hero.subtitle')}
           </p>
           
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
@@ -50,7 +49,7 @@ const HeroSection = () => {
               className="bg-gradient-to-r from-primary to-secondary hover:from-primary/80 hover:to-secondary/80 text-white font-semibold px-8 py-4 text-lg glow-primary transition-all duration-300 hover:scale-105"
             >
               <a href="https://api.leadconnectorhq.com/widget/form/V75cRue7Ozu57pn6Ugqj" target="_blank" rel="noopener noreferrer">
-                Book your Demo now
+                {t('hero.cta')}
               </a>
             </Button>
             

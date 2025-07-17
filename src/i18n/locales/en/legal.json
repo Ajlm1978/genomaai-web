@@ -1,0 +1,72 @@
+{
+  "privacyPolicy": {
+    "title": "Privacy Policy",
+    "effectiveDate": "Effective Date: January 15, 2024",
+    "introduction": "At Fenix AI, we are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy explains how we collect, use, share, and protect your information when you use our services.",
+    "sections": {
+      "dataCollection": {
+        "title": "Information We Collect",
+        "content": "We collect information you provide directly to us, such as when you create an account, contact us, or use our services. This may include your name, email address, phone number, company information, and any other information you choose to provide."
+      },
+      "dataUsage": {
+        "title": "How We Use Your Information",
+        "content": "We use the information we collect to provide, maintain, and improve our services, communicate with you, and comply with legal obligations."
+      },
+      "dataSharing": {
+        "title": "Information Sharing",
+        "content": "We do not sell, trade, or otherwise transfer your personal information to third parties without your consent, except as described in this policy."
+      },
+      "userRights": {
+        "title": "Your Rights",
+        "content": "You have the right to access, update, or delete your personal information. You may also opt out of certain communications from us."
+      },
+      "contact": {
+        "title": "Contact Us",
+        "content": "If you have any questions about this Privacy Policy, please contact us at privacy@fenixai.com."
+      }
+    }
+  },
+  "termsOfService": {
+    "title": "Terms of Service",
+    "effectiveDate": "Effective Date: January 15, 2024",
+    "introduction": "Welcome to Fenix AI! These Terms of Service govern your use of our website and services. By accessing or using our services, you agree to be bound by these terms.",
+    "sections": {
+      "acceptance": {
+        "title": "Acceptance of Terms",
+        "content": "By accessing and using our services, you accept and agree to be bound by the terms and provision of this agreement."
+      },
+      "serviceDescription": {
+        "title": "Service Description",
+        "content": "Fenix AI provides artificial intelligence and automation solutions for businesses across various industries."
+      },
+      "userResponsibilities": {
+        "title": "User Responsibilities",
+        "content": "You are responsible for maintaining the confidentiality of your account and password and for restricting access to your account."
+      },
+      "limitations": {
+        "title": "Limitations",
+        "content": "Our services are provided 'as is' without warranties of any kind, either express or implied."
+      },
+      "intellectualProperty": {
+        "title": "Intellectual Property",
+        "content": "All content and materials available through our services are the property of Fenix AI and are protected by intellectual property laws."
+      },
+      "privacy": {
+        "title": "Privacy",
+        "content": "Your privacy is important to us. Please review our Privacy Policy to understand how we collect and use your information."
+      },
+      "payments": {
+        "title": "Payment Terms",
+        "content": "Payment terms will be specified in your service agreement. All fees are non-refundable unless otherwise stated."
+      },
+      "liability": {
+        "title": "Limitation of Liability",
+        "content": "Fenix AI shall not be liable for any indirect, incidental, special, consequential, or punitive damages."
+      },
+      "contact": {
+        "title": "Contact Information",
+        "content": "For questions about these Terms of Service, please contact us at legal@fenixai.com."
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "navigation": {
+    "home": "Home",
+    "solutions": "Solutions",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "buttons": {
+    "getStarted": "Get Started",
+    "learnMore": "Learn More",
+    "chatAssistant": "Chat Assistant",
+    "backToHome": "Back to Home",
+    "contactUs": "Contact Us",
+    "scheduleDemo": "Schedule Demo"
+  },
+  "contact": {
+    "email": "Email",
+    "phone": "Phone",
+    "address": "Address"
+  },
+  "legal": {
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service",
+    "allRightsReserved": "All rights reserved",
+    "governedBy": "Governed by the laws of"
+  },
+  "whatsapp": {
+    "message": "Hello! I'm interested in learning more about Fenix AI's solutions. Could you please provide me with more information about your services?"
+  }
+}
