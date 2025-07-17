@@ -69,6 +69,10 @@
     "subtitle": "Join hundreds of companies already using Fenix AI to revolutionize their operations",
     "description": "Don't let your competitors get ahead. Start your AI transformation today and experience the power of intelligent automation."
   },
+  "integrations": {
+    "title": "AI-Powered Integrations",
+    "subtitle": "Seamlessly connect with leading AI platforms and models"
+  },
   "footer": {
     "description": "Fenix AI is a leading provider of artificial intelligence solutions for business automation. We help companies across industries optimize their operations, reduce costs, and accelerate growth through cutting-edge AI technology."
   }
