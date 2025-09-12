@@ -32,9 +32,9 @@ const Footer = () => {
               {t('homepage:footer.description')}
             </p>
             <div className="text-sm text-gray-400">
-              <p>3001 Aloma Ave</p>
-              <p>Suite 212</p>
-              <p>Winter Park, FL 32792</p>
+              <p>2431 ALOMA AVE</p>
+              <p>SUITE 264</p>
+              <p>WINTER PARK, FL 32792</p>
             </div>
           </div>
 
