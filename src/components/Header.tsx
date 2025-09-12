@@ -123,9 +123,9 @@ const Header = () => {
                       </div>
                       <div>
                         <p className="text-gray-400">{t('contact.address')}:</p>
-                        <p className="text-white">3001 Aloma Ave</p>
-                        <p className="text-white">Suite 212</p>
-                        <p className="text-white">Winter Park, FL 32792</p>
+                        <p className="text-white">2431 ALOMA AVE</p>
+                        <p className="text-white">SUITE 264</p>
+                        <p className="text-white">WINTER PARK, FL 32792</p>
                       </div>
                     </div>
                   </div>

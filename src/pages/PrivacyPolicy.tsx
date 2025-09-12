@@ -145,9 +145,9 @@ const PrivacyPolicy = () => {
               </p>
               <div className="bg-gray-800/50 p-4 rounded-lg">
                 <p><strong>Fenix AI</strong></p>
-                <p>3001 Aloma Ave</p>
-                <p>Suite 212</p>
-                <p>Winter Park, FL 32792</p>
+                <p>2431 ALOMA AVE</p>
+                <p>SUITE 264</p>
+                <p>WINTER PARK, FL 32792</p>
                 <p>Email: privacy@fenixai.com</p>
               </div>
             </section>
