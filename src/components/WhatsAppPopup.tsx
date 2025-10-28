@@ -1,5 +1,24 @@
 import React, { useState, useEffect } from 'react';
 import { X } from 'lucide-react';
+import { z } from 'zod';
+
+// Validation schema for WhatsApp messages
+const whatsappMessageSchema = z.string()
+  .trim()
+  .min(1, 'Message cannot be empty')
+  .max(500, 'Message must be less than 500 characters')
+  .regex(/^[a-zA-Z0-9\s.,!?¿¡áéíóúñÁÉÍÓÚÑüÜ()-]+$/, 'Message contains invalid characters');
+
+// Validation utility function
+const validateWhatsAppMessage = (message: string): string => {
+  const validationResult = whatsappMessageSchema.safeParse(message);
+  if (!validationResult.success) {
+    console.error('WhatsApp message validation failed:', validationResult.error.errors[0].message);
+    // Fallback to safe default message if validation fails
+    return 'Hola, me interesa conocer más sobre Fenix AI';
+  }
+  return validationResult.data;
+};
 
 interface WhatsAppPopupProps {
   onClose: () => void;
@@ -19,8 +38,12 @@ const WhatsAppPopup: React.FC<WhatsAppPopupProps> = ({ onClose }) => {
 
   const handleWhatsAppClick = () => {
     const phoneNumber = '17869484685';
-    const message = 'Hola, me interesa conocer más sobre Fenix AI';
-    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    const rawMessage = 'Hola, me interesa conocer más sobre Fenix AI';
+    
+    // Validate message before constructing URL
+    const validatedMessage = validateWhatsAppMessage(rawMessage);
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(validatedMessage)}`;
+    
     window.open(whatsappUrl, '_blank');
     onClose();
   };
