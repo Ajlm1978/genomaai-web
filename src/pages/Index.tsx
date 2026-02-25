@@ -1,13 +1,19 @@
 
 import React, { useState } from 'react';
 import ParticleField from '@/components/ParticleField';
+import AnnouncementBar from '@/components/AnnouncementBar';
 import Header from '@/components/Header';
 import HeroSection from '@/components/HeroSection';
-import UseCasesSection from '@/components/UseCasesSection';
-import TestimonialsSection from '@/components/TestimonialsSection';
-import AssistantSection from '@/components/AssistantSection';
+import LogoMarquee from '@/components/LogoMarquee';
 import IntegrationsSection from '@/components/IntegrationsSection';
-import CTASection from '@/components/CTASection';
+import FeaturesSection from '@/components/FeaturesSection';
+import PremiumFeaturesSection from '@/components/PremiumFeaturesSection';
+import StatsSection from '@/components/StatsSection';
+import UseCasesSection from '@/components/UseCasesSection';
+import PricingSection from '@/components/PricingSection';
+import EnterpriseCTA from '@/components/EnterpriseCTA';
+import FAQSection from '@/components/FAQSection';
+import AssistantSection from '@/components/AssistantSection';
 import Footer from '@/components/Footer';
 import WhatsAppPopup from '@/components/WhatsAppPopup';
 
@@ -16,26 +22,26 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background text-foreground relative overflow-x-hidden">
-      {/* Particle background */}
       <ParticleField />
-      
-      {/* Header */}
+      <AnnouncementBar />
       <Header />
       
-      {/* Main content */}
       <main className="relative z-10">
         <HeroSection />
-        <UseCasesSection />
-        <TestimonialsSection />
-        <AssistantSection />
+        <LogoMarquee />
         <IntegrationsSection />
-        <CTASection />
+        <FeaturesSection />
+        <PremiumFeaturesSection />
+        <StatsSection />
+        <UseCasesSection />
+        <PricingSection />
+        <EnterpriseCTA />
+        <FAQSection />
+        <AssistantSection />
       </main>
 
-      {/* Footer */}
       <Footer />
 
-      {/* WhatsApp Popup */}
       {showWhatsAppPopup && (
         <WhatsAppPopup onClose={() => setShowWhatsAppPopup(false)} />
       )}

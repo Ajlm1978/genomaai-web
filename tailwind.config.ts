@@ -53,11 +53,11 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				'purple-glow': 'hsl(var(--purple-glow))',
-				'pink-glow': 'hsl(var(--pink-glow))',
-				'neon-purple': 'hsl(var(--neon-purple))',
-				'neon-pink': 'hsl(var(--neon-pink))',
-				'soft-lavender': 'hsl(var(--soft-lavender))',
+				// Custom Fenix AI colors
+				'electric-blue': 'hsl(var(--electric-blue))',
+				'violet': 'hsl(var(--violet))',
+				'deep-black': 'hsl(var(--deep-black))',
+				'glass-bg': 'hsl(var(--glass-bg))',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
