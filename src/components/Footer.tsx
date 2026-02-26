@@ -1,24 +1,22 @@
 
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { Separator } from '@/components/ui/separator';
 import { Link } from 'react-router-dom';
-import { Mail, Phone, MapPin } from 'lucide-react';
 
 const Footer = () => {
+  const { t } = useTranslation(['common', 'homepage']);
+  
   return (
-    <footer className="relative z-10 mt-12">
-      <div className="gradient-line" />
+    <footer className="relative z-10 mt-24">
+      <Separator className="mb-12" />
       
-      <div className="container mx-auto px-6 py-16">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold gradient-text mb-4">Bienvenido Al Futuro.</h2>
-        </div>
-
+      <div className="container mx-auto px-6 pb-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Company Info */}
           <div className="space-y-4">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-full overflow-hidden">
+              <div className="w-8 h-8 rounded-full overflow-hidden">
                 <img 
                   src="/lovable-uploads/b786050e-9f4e-47ed-9196-92f840bc316b.png" 
                   alt="Fenix AI Logo" 
@@ -27,55 +25,91 @@ const Footer = () => {
               </div>
               <div>
                 <h3 className="text-lg font-bold gradient-text">FENIX AI</h3>
-                <p className="text-xs text-muted-foreground uppercase tracking-wider">Inteligencia Artificial</p>
+                <p className="text-xs text-gray-400 uppercase tracking-wider">Inteligencia Artificial</p>
               </div>
             </div>
-            <p className="text-muted-foreground text-sm leading-relaxed">
-              Fenix AI es un proveedor líder de soluciones de inteligencia artificial para automatización empresarial.
+            <p className="text-gray-400 text-sm">
+              {t('homepage:footer.description')}
             </p>
-          </div>
-
-          {/* Contact */}
-          <div className="space-y-4">
-            <h4 className="text-foreground font-semibold">Contacto</h4>
-            <div className="space-y-3">
-              <a href="mailto:info@fenixaiconsulting.com" className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors text-sm">
-                <Mail className="w-4 h-4" />
-                info@fenixaiconsulting.com
-              </a>
-              <a href="tel:+17862337574" className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors text-sm">
-                <Phone className="w-4 h-4" />
-                +1 (786) 233-7574
-              </a>
-              <div className="flex items-start gap-3 text-muted-foreground text-sm">
-                <MapPin className="w-4 h-4 flex-shrink-0 mt-0.5" />
-                <span>2431 ALOMA AVE, SUITE 264, WINTER PARK, FL 32792</span>
-              </div>
+            <div className="text-sm text-gray-400">
+              <p>2431 ALOMA AVE</p>
+              <p>SUITE 264</p>
+              <p>WINTER PARK, FL 32792</p>
             </div>
           </div>
 
-          {/* Legal */}
+          {/* Quick Links */}
           <div className="space-y-4">
-            <h4 className="text-foreground font-semibold">Legal</h4>
+            <h4 className="text-white font-semibold">Quick Links</h4>
             <div className="space-y-2">
-              <Link to="/privacy-policy" className="block text-muted-foreground hover:text-primary transition-colors text-sm">
-                Política de Privacidad
+              <Link 
+                to="/" 
+                className="block text-gray-400 hover:text-primary transition-colors text-sm"
+              >
+                {t('common:navigation.home')}
               </Link>
-              <Link to="/terms-of-service" className="block text-muted-foreground hover:text-primary transition-colors text-sm">
-                Términos de Servicio
+              <a 
+                href="#services" 
+                className="block text-gray-400 hover:text-primary transition-colors text-sm"
+              >
+                {t('common:navigation.solutions')}
+              </a>
+              <a 
+                href="#about" 
+                className="block text-gray-400 hover:text-primary transition-colors text-sm"
+              >
+                {t('common:navigation.about')}
+              </a>
+              <a 
+                href="#contact" 
+                className="block text-gray-400 hover:text-primary transition-colors text-sm"
+              >
+                {t('common:navigation.contact')}
+              </a>
+            </div>
+          </div>
+
+          {/* Legal Links */}
+          <div className="space-y-4">
+            <h4 className="text-white font-semibold">Legal</h4>
+            <div className="space-y-2">
+              <Link 
+                to="/privacy-policy" 
+                className="block text-gray-400 hover:text-primary transition-colors text-sm"
+              >
+                {t('common:legal.privacyPolicy')}
               </Link>
+              <Link 
+                to="/terms-of-service" 
+                className="block text-gray-400 hover:text-primary transition-colors text-sm"
+              >
+                {t('common:legal.termsOfService')}
+              </Link>
+            </div>
+            <div className="mt-6">
+              <p className="text-xs text-gray-500">
+                Contact us: <br />
+                <a href="mailto:info@fenixaiconsulting.com" className="text-primary hover:text-primary/80">
+                  info@fenixaiconsulting.com
+                </a>
+                <br />
+                <a href="tel:+17862337574" className="text-primary hover:text-primary/80">
+                  +1 (786) 233-7574
+                </a>
+              </p>
             </div>
           </div>
         </div>
 
         <Separator className="my-8" />
         
+        {/* Copyright */}
         <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-          <p className="text-muted-foreground text-sm">
-            © 2025 Fenix AI. Todos los derechos reservados.
+          <p className="text-gray-400 text-sm">
+            © 2025 Fenix AI. {t('common:legal.allRightsReserved')}
           </p>
-          <p className="text-muted-foreground/60 text-xs">
-            Powered by Fenix AI
+          <p className="text-gray-500 text-xs">
+            {t('common:legal.governedBy')} Florida, USA
           </p>
         </div>
       </div>
