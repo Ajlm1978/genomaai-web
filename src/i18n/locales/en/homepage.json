@@ -1,79 +1,283 @@
 {
   "hero": {
-    "title": "Transform Your Business with AI-Powered Automation",
-    "subtitle": "Fenix AI revolutionizes your operations with intelligent automation solutions. Boost efficiency, reduce costs, and scale your business with our cutting-edge artificial intelligence technology.",
-    "cta": "Start Your AI Journey"
+    "title": "AI Agents That Sound Human and Work 24/7",
+    "subtitle": "Automate calls, qualify leads, and schedule appointments with conversational AI agents that integrate natively with your CRM. For businesses and agencies.",
+    "cta": "Start Free",
+    "ctaDemo": "Schedule Demo",
+    "trusted": "Trusted by agencies and businesses across the Americas"
+  },
+  "benefits": {
+    "title": "Why Genoma AI?",
+    "subtitle": "Everything you need to automate your customer conversations",
+    "items": {
+      "omnichannel": {
+        "title": "True Omnichannel",
+        "description": "WhatsApp, Instagram, Facebook, phone calls, web chat, and email — all from one platform."
+      },
+      "voice": {
+        "title": "Natural Voice AI",
+        "description": "AI agents powered by ElevenLabs that sound indistinguishable from humans. In English and Spanish."
+      },
+      "crm": {
+        "title": "Free CRM Included",
+        "description": "Every plan includes a full CRM. Or integrate with GoHighLevel, HubSpot, and more."
+      },
+      "nocode": {
+        "title": "No Code Required",
+        "description": "Set up your AI agent in minutes. No developers needed. Just configure and launch."
+      },
+      "twentyfour": {
+        "title": "24/7 Availability",
+        "description": "Never miss a lead again. Your AI agents work around the clock, every day of the year."
+      },
+      "whitelabel": {
+        "title": "White Label for Agencies",
+        "description": "Resell AI agents under your own brand. Your logo, your domain, your pricing."
+      }
+    }
   },
   "useCases": {
-    "title": "AI Solutions for Every Industry",
-    "subtitle": "Discover how Fenix AI transforms businesses across sectors",
-    "healthcare": {
-      "title": "Healthcare",
-      "description": "Automated patient data analysis, medical image recognition, and treatment optimization."
-    },
-    "finance": {
-      "title": "Finance",
-      "description": "Risk assessment, fraud detection, and automated financial analysis."
-    },
-    "manufacturing": {
-      "title": "Manufacturing",
-      "description": "Predictive maintenance, quality control, and production optimization."
-    },
-    "retail": {
-      "title": "Retail",
-      "description": "Inventory management, customer behavior analysis, and personalized recommendations."
-    },
-    "logistics": {
-      "title": "Logistics",
-      "description": "Route optimization, demand forecasting, and supply chain automation."
-    },
-    "education": {
-      "title": "Education",
-      "description": "Personalized learning, automated grading, and student performance analytics."
+    "title": "What Can Your AI Agent Do?",
+    "subtitle": "Real use cases that drive real results",
+    "items": {
+      "leadQualification": {
+        "title": "Lead Qualification",
+        "description": "Your AI agent calls or messages leads, asks qualifying questions, scores them, and passes hot leads to your sales team automatically."
+      },
+      "appointment": {
+        "title": "Appointment Scheduling",
+        "description": "Coordinates dates, checks calendar availability, and books appointments automatically — no back-and-forth needed."
+      },
+      "receptionist": {
+        "title": "AI Receptionist",
+        "description": "Answers every call to your business 24/7. Routes calls, takes messages, and handles common questions instantly."
+      },
+      "customerService": {
+        "title": "Customer Support",
+        "description": "Handles inquiries, complaints, and FAQs across all channels. Escalates complex issues to human agents when needed."
+      },
+      "reactivation": {
+        "title": "Database Reactivation",
+        "description": "Massively contacts old leads and dormant customers via phone, email, or WhatsApp to bring them back."
+      },
+      "followUp": {
+        "title": "Automated Follow-Up",
+        "description": "Sends timely follow-up messages and reminder calls to keep prospects engaged throughout the sales cycle."
+      }
     }
+  },
+  "dualTrack": {
+    "title": "Two Paths, One Platform",
+    "subtitle": "Whether you're a business looking to automate or an agency looking to scale",
+    "business": {
+      "title": "For Businesses",
+      "subtitle": "Automate your customer conversations",
+      "features": [
+        "AI agents for calls, WhatsApp, and chat",
+        "Free CRM included with every plan",
+        "Native GoHighLevel integration",
+        "Set up in minutes, no code required",
+        "24/7 lead qualification and scheduling"
+      ],
+      "cta": "See Business Plans"
+    },
+    "agency": {
+      "title": "For Agencies",
+      "subtitle": "Resell AI agents under your brand",
+      "features": [
+        "Full white-label solution",
+        "Your brand, your domain, your pricing",
+        "Manage multiple client accounts",
+        "Dedicated agency support",
+        "High-margin recurring revenue"
+      ],
+      "cta": "See Agency Plans"
+    }
+  },
+  "pricing": {
+    "title": "Simple, Transparent Pricing",
+    "subtitle": "No hidden fees. No surprises. Cancel anytime.",
+    "monthly": "Monthly",
+    "perMonth": "/month",
+    "popular": "Most Popular",
+    "businessTitle": "For Businesses",
+    "agencyTitle": "For Agencies",
+    "cta": "Get Started",
+    "ctaContact": "Contact Sales",
+    "plans": {
+      "starter": {
+        "name": "Starter",
+        "price": "$47",
+        "description": "Perfect for small businesses getting started with AI",
+        "features": [
+          "Text-based AI agents",
+          "WhatsApp + Web Chat",
+          "Free CRM included",
+          "Up to 500 conversations/mo",
+          "Email support"
+        ]
+      },
+      "pro": {
+        "name": "Pro",
+        "price": "$97",
+        "description": "For growing businesses that need voice + text AI",
+        "features": [
+          "Text + Voice AI agents",
+          "All channels included",
+          "Free CRM included",
+          "GoHighLevel integration",
+          "Up to 2,000 conversations/mo",
+          "Priority support"
+        ]
+      },
+      "business": {
+        "name": "Business",
+        "price": "$147",
+        "description": "For established businesses that need everything",
+        "features": [
+          "Everything in Pro",
+          "Unlimited conversations",
+          "Advanced integrations",
+          "Custom voice cloning",
+          "Dedicated account manager",
+          "Priority phone support"
+        ]
+      },
+      "agency": {
+        "name": "Agency",
+        "price": "$197",
+        "description": "Start reselling AI agents under your brand",
+        "features": [
+          "5 client sub-accounts",
+          "Full white-label branding",
+          "Your domain & logo",
+          "Client management dashboard",
+          "Agency support",
+          "Training materials"
+        ]
+      },
+      "agencyPro": {
+        "name": "Agency Pro",
+        "price": "$497",
+        "description": "Scale your AI agency to the next level",
+        "features": [
+          "15 client sub-accounts",
+          "Full white-label branding",
+          "Priority dedicated support",
+          "Custom onboarding",
+          "Revenue analytics",
+          "API access"
+        ]
+      }
+    }
+  },
+  "integrations": {
+    "title": "Powerful Integrations",
+    "subtitle": "Connect with the tools you already use"
   },
   "testimonials": {
     "title": "What Our Clients Say",
     "subtitle": "Real results from real businesses",
-    "testimonial1": {
-      "text": "Fenix AI has transformed our operations completely. We've seen a 40% increase in efficiency and significant cost reductions.",
-      "name": "Sarah Johnson",
-      "company": "TechCorp Solutions"
-    },
-    "testimonial2": {
-      "text": "The AI automation solutions provided by Fenix have streamlined our processes and improved our decision-making capabilities.",
-      "name": "Michael Chen",
-      "company": "Global Industries"
-    },
-    "testimonial3": {
-      "text": "Outstanding results! Our productivity has increased by 35% since implementing Fenix AI solutions.",
-      "name": "Emily Rodriguez",
-      "company": "Innovation Labs"
+    "items": {
+      "t1": {
+        "text": "Genoma AI transformed how we handle leads. Our response time went from hours to seconds, and our booking rate increased by 40%.",
+        "name": "Carlos Mendoza",
+        "role": "Marketing Agency Owner",
+        "company": "Mendoza Digital"
+      },
+      "t2": {
+        "text": "The white-label solution is a game changer. We now offer AI agents as a premium service to all our clients with zero development cost.",
+        "name": "Laura Vásquez",
+        "role": "Agency Director",
+        "company": "LV Marketing Group"
+      },
+      "t3": {
+        "text": "We replaced our call center with Genoma AI agents. Same quality, 70% less cost. The GoHighLevel integration made it seamless.",
+        "name": "Roberto Silva",
+        "role": "Operations Manager",
+        "company": "SilvaHealth Clinics"
+      }
     }
   },
-  "assistant": {
-    "title": "Your AI Assistant is Ready",
-    "subtitle": "Get instant answers about our AI solutions",
-    "placeholder": "Ask me anything about Fenix AI...",
-    "responses": {
-      "greeting": "Hello! I'm your Fenix AI assistant. How can I help you today?",
-      "services": "We offer AI automation solutions for healthcare, finance, manufacturing, retail, logistics, and education. Which industry interests you?",
-      "pricing": "Our pricing is customized based on your specific needs. Would you like to schedule a consultation to discuss your requirements?",
-      "demo": "I'd be happy to arrange a demo for you! Please contact us through WhatsApp or email to schedule a personalized demonstration.",
-      "integration": "Our AI solutions integrate seamlessly with existing systems. We provide full support during implementation and beyond.",
-      "default": "That's a great question! For detailed information, I recommend contacting our team directly through WhatsApp or email."
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Everything you need to know",
+    "items": {
+      "q1": {
+        "question": "What is Genoma AI?",
+        "answer": "Genoma AI is a SaaS platform that lets you create and deploy conversational AI agents that can handle phone calls, WhatsApp messages, web chat, and more. Our agents integrate natively with GoHighLevel and other CRMs."
+      },
+      "q2": {
+        "question": "Do I need technical knowledge to use it?",
+        "answer": "Not at all. Genoma AI is designed to be no-code. You can configure your AI agent in minutes using our intuitive interface. No developers required."
+      },
+      "q3": {
+        "question": "What languages do the AI agents support?",
+        "answer": "Our agents support English and Spanish natively, with natural-sounding voices powered by ElevenLabs. Additional languages are available on request."
+      },
+      "q4": {
+        "question": "How does the white-label program work?",
+        "answer": "With our Agency plans, you get a fully branded version of the platform with your logo, domain, and custom pricing. Your clients never see the Genoma AI brand."
+      },
+      "q5": {
+        "question": "Can I integrate with my existing CRM?",
+        "answer": "Yes! We offer native integration with GoHighLevel, and we also support connections via Zapier, Make, and direct API for other CRMs like HubSpot, Salesforce, and more."
+      },
+      "q6": {
+        "question": "Is there a free trial?",
+        "answer": "Yes, we offer a free trial so you can test the platform before committing. No credit card required to start."
+      },
+      "q7": {
+        "question": "What's included in the free CRM?",
+        "answer": "Every plan includes a full-featured CRM with contact management, pipeline tracking, conversation history, and basic automation. It's everything you need to manage your leads."
+      }
     }
   },
-  "cta": {
-    "title": "Ready to Transform Your Business?",
-    "subtitle": "Join hundreds of companies already using Fenix AI to revolutionize their operations",
-    "description": "Don't let your competitors get ahead. Start your AI transformation today and experience the power of intelligent automation."
+  "ctaFinal": {
+    "title": "Ready to Automate Your Business?",
+    "subtitle": "Join hundreds of businesses already using Genoma AI to close more deals, faster.",
+    "cta": "Start Free Today",
+    "ctaDemo": "Schedule a Demo",
+    "noCard": "No credit card required"
   },
-  "integrations": {
-    "title": "AI-Powered Integrations",
-    "subtitle": "Seamlessly connect with leading AI platforms and models"
+  "about": {
+    "title": "About Genoma AI",
+    "subtitle": "Intelligent Automation & Development",
+    "mission": {
+      "title": "Our Mission",
+      "text": "To democratize access to conversational AI for businesses and agencies in the Americas. We believe every business deserves an AI agent that works 24/7, sounds natural, and integrates seamlessly with their existing tools."
+    },
+    "story": {
+      "title": "Our Story",
+      "text": "Genoma AI was born from a simple observation: businesses lose thousands of dollars every month in missed calls and unqualified leads. Founded by Amilcar Leon, an indie hacker and digital nomad based in Winter Park, Florida, Genoma AI combines cutting-edge AI technology with practical business automation to solve real problems for real businesses."
+    },
+    "values": {
+      "title": "Our Values",
+      "innovation": {
+        "title": "Innovation",
+        "text": "We push the boundaries of what's possible with conversational AI."
+      },
+      "simplicity": {
+        "title": "Simplicity",
+        "text": "Powerful technology should be easy to use. No code, no complexity."
+      },
+      "results": {
+        "title": "Results",
+        "text": "We measure our success by the results our clients achieve."
+      },
+      "partnership": {
+        "title": "Partnership",
+        "text": "We grow when our agencies and clients grow. Your success is our success."
+      }
+    }
   },
   "footer": {
-    "description": "Fenix AI is a leading provider of artificial intelligence solutions for business automation. We help companies across industries optimize their operations, reduce costs, and accelerate growth through cutting-edge AI technology."
+    "description": "Genoma AI is a leading platform for AI-powered conversational agents. We help businesses and agencies automate customer interactions, qualify leads, and scale operations with intelligent automation.",
+    "product": "Product",
+    "company": "Company",
+    "resources": "Resources",
+    "blog": "Blog",
+    "documentation": "Documentation",
+    "support": "Support"
   }
 }

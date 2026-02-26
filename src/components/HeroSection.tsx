@@ -1,86 +1,74 @@
+import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
+import { ArrowRight, Play } from "lucide-react";
 
-import React, { useEffect, useState } from 'react';
-import { useTranslation } from 'react-i18next';
-import { Button } from '@/components/ui/button';
 const HeroSection = () => {
-  const { t } = useTranslation('homepage');
-  const [isVisible, setIsVisible] = useState(false);
-  
-  useEffect(() => {
-    setIsVisible(true);
-  }, []);
-  return <section className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20">
-      {/* Animated background gradient with neural network aesthetics */}
-      <div className="absolute inset-0 animated-bg" />
-      
-      {/* Fixed Logo watermark background */}
-      <div className="fixed inset-0 flex items-center justify-center opacity-18 pointer-events-none z-0">
-        <img src="/lovable-uploads/32cc264e-2fe8-4971-8b6f-f3a757df4d31.png" alt="Fenix AI Watermark" className="w-96 h-96 object-contain" style={{
-        opacity: 0.18
-      }} />
-      </div>
-      
-      {/* Futuristic grid overlay */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute inset-0" style={{
-        backgroundImage: `
-            linear-gradient(hsl(var(--primary) / 0.1) 1px, transparent 1px),
-            linear-gradient(90deg, hsl(var(--primary) / 0.1) 1px, transparent 1px)
-          `,
-        backgroundSize: '50px 50px'
-      }} />
+  const { t } = useTranslation("homepage");
+
+  return (
+    <section className="relative min-h-[90vh] flex items-center pt-20 overflow-hidden">
+      {/* Background effects */}
+      <div className="absolute inset-0">
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-cyan-500/10 rounded-full blur-[120px]" />
+        <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-cyan-400/5 rounded-full blur-[100px]" />
+        <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-cyan-500/20 to-transparent" />
       </div>
 
-      {/* Hero content */}
-      <div className="relative z-10 text-center max-w-4xl mx-auto px-6">
-        <div className={`transition-all duration-1000 ${isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-            <span className="gradient-text">{t('hero.title')}</span>
-          </h1>
-          
-          <p className="text-xl md:text-2xl text-gray-300 mb-12 max-w-2xl mx-auto leading-relaxed">
-            {t('hero.subtitle')}
-          </p>
-          
-          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-            <Button 
-              asChild
-              size="lg" 
-              className="bg-gradient-to-r from-primary to-secondary hover:from-primary/80 hover:to-secondary/80 text-white font-semibold px-8 py-4 text-lg glow-primary transition-all duration-300 hover:scale-105"
-            >
-              <a href="https://api.leadconnectorhq.com/widget/form/V75cRue7Ozu57pn6Ugqj" target="_blank" rel="noopener noreferrer">
-                {t('hero.cta')}
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
+          {/* Left - Text */}
+          <div className="text-center lg:text-left">
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 mb-6 rounded-full border border-cyan-500/20 bg-cyan-500/5 text-cyan-400 text-sm">
+              <span className="w-2 h-2 rounded-full bg-cyan-400 animate-pulse" />
+              Powered by AI
+            </div>
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+              <span className="bg-gradient-to-r from-white via-white to-gray-300 bg-clip-text text-transparent">
+                {t("hero.title")}
+              </span>
+            </h1>
+            <p className="text-lg sm:text-xl text-gray-400 leading-relaxed mb-8 max-w-xl mx-auto lg:mx-0">
+              {t("hero.subtitle")}
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+              <Link
+                to="/pricing"
+                className="inline-flex items-center justify-center gap-2 px-8 py-4 text-base font-semibold bg-gradient-to-r from-cyan-500 to-cyan-400 text-[#0a1628] rounded-xl hover:shadow-lg hover:shadow-cyan-500/25 transition-all duration-300 group"
+              >
+                {t("hero.cta")}
+                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              </Link>
+              <a
+                href="https://wa.me/17862337574?text=Hello!%20I%20want%20a%20demo%20of%20Genoma%20AI"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 px-8 py-4 text-base font-semibold border border-cyan-500/30 text-cyan-400 rounded-xl hover:bg-cyan-500/10 transition-all duration-300"
+              >
+                <Play className="w-5 h-5" />
+                {t("hero.ctaDemo")}
               </a>
-            </Button>
-            
-            
+            </div>
+            {/* Trust badges */}
+            <div className="mt-10 flex flex-wrap items-center gap-6 justify-center lg:justify-start">
+              <p className="text-gray-500 text-sm">{t("hero.trusted")}</p>
+            </div>
+          </div>
+
+          {/* Right - Hero Image */}
+          <div className="relative flex justify-center lg:justify-end">
+            <div className="relative w-full max-w-lg">
+              <div className="absolute -inset-4 bg-gradient-to-r from-cyan-500/20 to-cyan-400/10 rounded-2xl blur-2xl" />
+              <img
+                src="/genoma-hero.jpg"
+                alt="Genoma AI - Human meets AI"
+                className="relative rounded-2xl shadow-2xl shadow-cyan-500/10 w-full"
+              />
+            </div>
           </div>
         </div>
       </div>
-
-      {/* Futuristic decorative elements - data streams and neural connections */}
-      <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-primary rounded-full animate-float" />
-      <div className="absolute top-1/3 right-1/3 w-1 h-1 bg-secondary rounded-full animate-float" style={{
-      animationDelay: '2s'
-    }} />
-      <div className="absolute bottom-1/3 left-1/3 w-1.5 h-1.5 bg-primary rounded-full animate-float" style={{
-      animationDelay: '4s'
-    }} />
-      <div className="absolute bottom-1/4 right-1/4 w-1 h-1 bg-secondary rounded-full animate-float" style={{
-      animationDelay: '1s'
-    }} />
-      
-      <div className="absolute top-1/2 left-1/4 w-px h-12 bg-gradient-to-b from-primary/40 to-transparent animate-pulse" style={{
-      animationDelay: '3s'
-    }} />
-      <div className="absolute top-1/3 right-1/4 w-16 h-px bg-gradient-to-r from-secondary/40 to-transparent animate-pulse" style={{
-      animationDelay: '1.5s'
-    }} />
-      
-      <div className="absolute top-1/5 left-1/2 w-0.5 h-0.5 bg-primary rounded-full animate-phoenix-energy" />
-      <div className="absolute bottom-1/5 right-1/2 w-0.5 h-0.5 bg-secondary rounded-full animate-phoenix-energy" style={{
-      animationDelay: '2.5s'
-    }} />
-    </section>;
+    </section>
+  );
 };
+
 export default HeroSection;

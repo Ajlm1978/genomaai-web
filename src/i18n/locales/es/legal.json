@@ -1,72 +1,12 @@
 {
-  "privacyPolicy": {
+  "privacy": {
     "title": "Política de Privacidad",
-    "effectiveDate": "Fecha de Vigencia: 15 de Enero, 2024",
-    "introduction": "En Fenix AI, estamos comprometidos a proteger su privacidad y garantizar la seguridad de su información personal. Esta Política de Privacidad explica cómo recopilamos, usamos, compartimos y protegemos su información cuando utiliza nuestros servicios.",
-    "sections": {
-      "dataCollection": {
-        "title": "Información que Recopilamos",
-        "content": "Recopilamos información que nos proporciona directamente, como cuando crea una cuenta, nos contacta o utiliza nuestros servicios. Esto puede incluir su nombre, dirección de correo electrónico, número de teléfono, información de la empresa y cualquier otra información que elija proporcionar."
-      },
-      "dataUsage": {
-        "title": "Cómo Utilizamos Su Información",
-        "content": "Utilizamos la información que recopilamos para proporcionar, mantener y mejorar nuestros servicios, comunicarnos con usted y cumplir con las obligaciones legales."
-      },
-      "dataSharing": {
-        "title": "Compartir Información",
-        "content": "No vendemos, intercambiamos o transferimos de otra manera su información personal a terceros sin su consentimiento, excepto como se describe en esta política."
-      },
-      "userRights": {
-        "title": "Sus Derechos",
-        "content": "Tiene derecho a acceder, actualizar o eliminar su información personal. También puede optar por no recibir ciertas comunicaciones de nuestra parte."
-      },
-      "contact": {
-        "title": "Contáctenos",
-        "content": "Si tiene alguna pregunta sobre esta Política de Privacidad, contáctenos en privacy@fenixai.com."
-      }
-    }
+    "lastUpdated": "Última actualización: Febrero 2026",
+    "content": "Esta Política de Privacidad describe cómo Genoma AI recopila, usa y comparte su información personal cuando utiliza nuestros servicios."
   },
-  "termsOfService": {
+  "terms": {
     "title": "Términos de Servicio",
-    "effectiveDate": "Fecha de Vigencia: 15 de Enero, 2024",
-    "introduction": "¡Bienvenido a Fenix AI! Estos Términos de Servicio rigen su uso de nuestro sitio web y servicios. Al acceder o utilizar nuestros servicios, acepta estar sujeto a estos términos.",
-    "sections": {
-      "acceptance": {
-        "title": "Aceptación de Términos",
-        "content": "Al acceder y utilizar nuestros servicios, acepta y está de acuerdo en estar sujeto a los términos y disposiciones de este acuerdo."
-      },
-      "serviceDescription": {
-        "title": "Descripción del Servicio",
-        "content": "Fenix AI proporciona soluciones de inteligencia artificial y automatización para empresas en diversas industrias."
-      },
-      "userResponsibilities": {
-        "title": "Responsabilidades del Usuario",
-        "content": "Es responsable de mantener la confidencialidad de su cuenta y contraseña y de restringir el acceso a su cuenta."
-      },
-      "limitations": {
-        "title": "Limitaciones",
-        "content": "Nuestros servicios se proporcionan 'tal como están' sin garantías de ningún tipo, ya sean expresas o implícitas."
-      },
-      "intellectualProperty": {
-        "title": "Propiedad Intelectual",
-        "content": "Todo el contenido y materiales disponibles a través de nuestros servicios son propiedad de Fenix AI y están protegidos por las leyes de propiedad intelectual."
-      },
-      "privacy": {
-        "title": "Privacidad",
-        "content": "Su privacidad es importante para nosotros. Revise nuestra Política de Privacidad para entender cómo recopilamos y usamos su información."
-      },
-      "payments": {
-        "title": "Términos de Pago",
-        "content": "Los términos de pago se especificarán en su acuerdo de servicio. Todas las tarifas no son reembolsables a menos que se indique lo contrario."
-      },
-      "liability": {
-        "title": "Limitación de Responsabilidad",
-        "content": "Fenix AI no será responsable de daños indirectos, incidentales, especiales, consecuentes o punitivos."
-      },
-      "contact": {
-        "title": "Información de Contacto",
-        "content": "Para preguntas sobre estos Términos de Servicio, contáctenos en legal@fenixai.com."
-      }
-    }
+    "lastUpdated": "Última actualización: Febrero 2026",
+    "content": "Estos Términos de Servicio rigen su uso de la plataforma y servicios de Genoma AI."
   }
 }

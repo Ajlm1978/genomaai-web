@@ -1,40 +1,44 @@
+import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
+import { ArrowRight, Play } from "lucide-react";
 
-import React from 'react';
-import { useTranslation } from 'react-i18next';
-import { Button } from '@/components/ui/button';
 const CTASection = () => {
-  const { t } = useTranslation('homepage');
-  
-  return <section className="py-24 px-6 relative">
-      <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-secondary/20" />
-      
-      <div className="relative z-10 max-w-4xl mx-auto text-center">
-        <h2 className="text-5xl font-bold mb-6">
-          {t('cta.title')}
-        </h2>
-        <p className="text-xl text-gray-300 mb-12 leading-relaxed">
-          {t('cta.subtitle')}
-        </p>
-        <p className="text-lg text-gray-400 mb-12">
-          {t('cta.description')}
-        </p>
-        
-        <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-          <Button 
-            asChild
-            size="lg" 
-            className="bg-gradient-to-r from-primary to-secondary hover:from-primary/80 hover:to-secondary/80 text-white font-semibold px-12 py-6 text-xl glow-primary transition-all duration-300 hover:scale-105"
-          >
-            <a href="https://api.leadconnectorhq.com/widget/form/V75cRue7Ozu57pn6Ugqj" target="_blank" rel="noopener noreferrer">
-              {t('hero.cta')}
-            </a>
-          </Button>
-          
-          
-        </div>
+  const { t } = useTranslation("homepage");
 
-        
+  return (
+    <section className="relative py-24">
+      <div className="absolute inset-0">
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-cyan-500/10 rounded-full blur-[150px]" />
       </div>
-    </section>;
+      <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6">
+          {t("ctaFinal.title")}
+        </h2>
+        <p className="text-gray-400 text-lg mb-10 max-w-2xl mx-auto">
+          {t("ctaFinal.subtitle")}
+        </p>
+        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <Link
+            to="/pricing"
+            className="inline-flex items-center justify-center gap-2 px-8 py-4 text-base font-semibold bg-gradient-to-r from-cyan-500 to-cyan-400 text-[#0a1628] rounded-xl hover:shadow-lg hover:shadow-cyan-500/25 transition-all duration-300 group"
+          >
+            {t("ctaFinal.cta")}
+            <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+          </Link>
+          <a
+            href="https://wa.me/17862337574?text=I%20want%20a%20demo%20of%20Genoma%20AI"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center gap-2 px-8 py-4 text-base font-semibold border border-cyan-500/30 text-cyan-400 rounded-xl hover:bg-cyan-500/10 transition-all duration-300"
+          >
+            <Play className="w-5 h-5" />
+            {t("ctaFinal.ctaDemo")}
+          </a>
+        </div>
+        <p className="mt-4 text-gray-500 text-sm">{t("ctaFinal.noCard")}</p>
+      </div>
+    </section>
+  );
 };
+
 export default CTASection;

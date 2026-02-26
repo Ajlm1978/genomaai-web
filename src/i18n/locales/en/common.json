@@ -2,16 +2,21 @@
   "navigation": {
     "home": "Home",
     "solutions": "Solutions",
-    "about": "About",
+    "useCases": "Use Cases",
+    "pricing": "Pricing",
+    "about": "About Us",
+    "agencies": "For Agencies",
     "contact": "Contact"
   },
   "buttons": {
-    "getStarted": "Get Started",
+    "getStarted": "Start Free",
+    "scheduleDemo": "Schedule Demo",
     "learnMore": "Learn More",
-    "chatAssistant": "Chat Assistant",
-    "backToHome": "Back to Home",
     "contactUs": "Contact Us",
-    "scheduleDemo": "Schedule Demo"
+    "backToHome": "Back to Home",
+    "viewPricing": "View Pricing",
+    "forBusinesses": "For Businesses",
+    "forAgencies": "For Agencies"
   },
   "contact": {
     "email": "Email",
@@ -25,6 +30,10 @@
     "governedBy": "Governed by the laws of"
   },
   "whatsapp": {
-    "message": "Hello! I'm interested in learning more about Fenix AI's solutions. Could you please provide me with more information about your services?"
+    "message": "Hello! I'm interested in learning more about Genoma AI's solutions. Could you please provide more information about your AI agents?"
+  },
+  "language": {
+    "en": "English",
+    "es": "Español"
   }
 }

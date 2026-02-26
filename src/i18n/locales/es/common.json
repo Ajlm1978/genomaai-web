@@ -2,19 +2,24 @@
   "navigation": {
     "home": "Inicio",
     "solutions": "Soluciones",
-    "about": "Acerca de",
+    "useCases": "Casos de Uso",
+    "pricing": "Precios",
+    "about": "Nosotros",
+    "agencies": "Para Agencias",
     "contact": "Contacto"
   },
   "buttons": {
-    "getStarted": "Comenzar",
+    "getStarted": "Empieza Gratis",
+    "scheduleDemo": "Agenda Demo",
     "learnMore": "Saber Más",
-    "chatAssistant": "Asistente Virtual",
-    "backToHome": "Volver al Inicio",
     "contactUs": "Contáctanos",
-    "scheduleDemo": "Agendar Demo"
+    "backToHome": "Volver al Inicio",
+    "viewPricing": "Ver Precios",
+    "forBusinesses": "Para Empresas",
+    "forAgencies": "Para Agencias"
   },
   "contact": {
-    "email": "Correo",
+    "email": "Email",
     "phone": "Teléfono",
     "address": "Dirección"
   },
@@ -25,6 +30,10 @@
     "governedBy": "Regido por las leyes de"
   },
   "whatsapp": {
-    "message": "¡Hola! Estoy interesado en conocer más sobre las soluciones de Fenix AI. ¿Podrían proporcionarme más información sobre sus servicios?"
+    "message": "¡Hola! Estoy interesado en conocer más sobre las soluciones de Genoma AI. ¿Podrían darme más información sobre sus agentes de IA?"
+  },
+  "language": {
+    "en": "English",
+    "es": "Español"
   }
 }
