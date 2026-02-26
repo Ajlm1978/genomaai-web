@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import { ArrowRight, Play } from "lucide-react";
+import genomaHero from "../assets/genoma-hero.jpg";
 
 const HeroSection = () => {
   const { t } = useTranslation("homepage");
@@ -59,7 +60,7 @@ const HeroSection = () => {
             <div className="relative w-full max-w-lg">
               <div className="absolute -inset-4 bg-gradient-to-r from-cyan-500/20 to-cyan-400/10 rounded-2xl blur-2xl" />
               <img
-                src="/genoma-hero.jpg"
+                src={genomaHero}
                 alt="Genoma AI - Human meets AI"
                 className="relative rounded-2xl shadow-2xl shadow-cyan-500/10 w-full"
               />

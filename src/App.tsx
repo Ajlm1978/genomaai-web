@@ -28,7 +28,7 @@ const App = () => (
       <TooltipProvider>
         <Toaster />
         <Sonner />
-        <BrowserRouter>
+        <BrowserRouter basename="/genomaai-web">
           <Routes>
             <Route element={<Layout />}>
               <Route path="/" element={<Home />} />

@@ -1,5 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { Lightbulb, Zap, Target, Handshake } from "lucide-react";
+import genomaHero from "../assets/genoma-hero.jpg";
 import CTASection from "@/components/CTASection";
 
 const valueIcons = [Lightbulb, Zap, Target, Handshake];
@@ -64,7 +65,7 @@ const About = () => {
           <div className="relative rounded-2xl overflow-hidden">
             <div className="absolute -inset-4 bg-gradient-to-r from-cyan-500/20 to-cyan-400/10 rounded-2xl blur-2xl" />
             <img
-              src="/genoma-hero.jpg"
+              src={genomaHero}
               alt="Genoma AI"
               className="relative w-full rounded-2xl"
             />

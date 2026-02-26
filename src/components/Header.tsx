@@ -1,4 +1,5 @@
 import { useState } from "react";
+import genomaLogo from "../assets/genoma-logo.jpg";
 import { useTranslation } from "react-i18next";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Globe } from "lucide-react";
@@ -29,7 +30,7 @@ const Header = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3 shrink-0">
             <img
-              src="/genoma-logo.jpg"
+              src={genomaLogo}
               alt="Genoma AI"
               className="h-10 w-10 rounded-lg object-cover"
             />

@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import { Mail, Phone, MapPin } from "lucide-react";
+import genomaLogo from "../assets/genoma-logo.jpg";
 
 const Footer = () => {
   const { t } = useTranslation(["common", "homepage"]);
@@ -12,7 +13,7 @@ const Footer = () => {
           {/* Brand */}
           <div className="lg:col-span-1">
             <Link to="/" className="flex items-center gap-3 mb-4">
-              <img src="/genoma-logo.jpg" alt="Genoma AI" className="h-10 w-10 rounded-lg object-cover" />
+              <img src={genomaLogo} alt="Genoma AI" className="h-10 w-10 rounded-lg object-cover" />
               <div>
                 <h3 className="text-lg font-bold">
                   <span className="text-white">GENOMA</span>{" "}
