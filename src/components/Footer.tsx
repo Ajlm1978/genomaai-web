@@ -52,11 +52,11 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-center gap-2 text-gray-400 text-sm">
                 <Mail className="w-4 h-4 text-cyan-400 shrink-0" />
-                <a href="mailto:info@genomaai.com" className="hover:text-cyan-400 transition-colors">info@genomaai.com</a>
+                <a href="mailto:ventas@genomai.ai" className="hover:text-cyan-400 transition-colors">ventas@genomai.ai</a>
               </li>
               <li className="flex items-center gap-2 text-gray-400 text-sm">
                 <Phone className="w-4 h-4 text-cyan-400 shrink-0" />
-                <a href="tel:+17862337574" className="hover:text-cyan-400 transition-colors">+1 (786) 233-7574</a>
+                <a href="tel:+13055256302" className="hover:text-cyan-400 transition-colors">+1 (305) 525-6302</a>
               </li>
               <li className="flex items-start gap-2 text-gray-400 text-sm">
                 <MapPin className="w-4 h-4 text-cyan-400 shrink-0 mt-0.5" />

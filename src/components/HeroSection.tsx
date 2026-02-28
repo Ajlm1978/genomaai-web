@@ -40,7 +40,7 @@ const HeroSection = () => {
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Link>
               <a
-                href="https://wa.me/17862337574?text=Hello!%20I%20want%20a%20demo%20of%20Genoma%20AI"
+                href="https://wa.me/13055256302?text=Hello!%20I%20want%20a%20demo%20of%20Genoma%20AI"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 text-base font-semibold border border-cyan-500/30 text-cyan-400 rounded-xl hover:bg-cyan-500/10 transition-all duration-300"

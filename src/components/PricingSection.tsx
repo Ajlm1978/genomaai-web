@@ -48,7 +48,7 @@ const PricingSection = ({ showAll = true }: PricingProps) => {
           ))}
         </ul>
         <a
-          href="https://wa.me/17862337574?text=I%20want%20to%20start%20with%20Genoma%20AI"
+          href="https://wa.me/13055256302?text=I%20want%20to%20start%20with%20Genoma%20AI"
           target="_blank"
           rel="noopener noreferrer"
           className={`block w-full text-center px-6 py-3 text-sm font-semibold rounded-xl transition-all ${
