@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { useTranslation } from "react-i18next";
 import { Check, ArrowRight, Users, Palette, BarChart3, Shield, Headphones, Rocket } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -36,6 +37,16 @@ const Agencies = () => {
   const agencyProFeatures = t("homepage:pricing.plans.agencyPro.features", { returnObjects: true }) as string[];
 
   return (
+    <>
+    <Helmet>
+      <title>Marca Blanca para Agencias | Revende Agentes IA - Genoma AI</title>
+      <meta name="description" content="Lanza tu agencia de agentes IA con marca blanca completa. Tu logo, tu dominio, tus precios. Desde $197/mes con 5 subcuentas." />
+      <meta property="og:title" content="Marca Blanca para Agencias | Revende Agentes IA - Genoma AI" />
+      <meta property="og:description" content="Lanza tu agencia de agentes IA con marca blanca completa. Tu logo, tu dominio, tus precios. Desde $197/mes con 5 subcuentas." />
+      <meta property="og:url" content="https://genomai.ai/agencies" />
+      <meta property="og:image" content="https://genomai.ai/og-image.png" />
+      <link rel="canonical" href="https://genomai.ai/agencies" />
+    </Helmet>
     <div className="pt-24">
       {/* Hero */}
       <section className="relative py-20">
@@ -177,8 +188,8 @@ const Agencies = () => {
           </a>
         </div>
       </section>
-    </div>
+     </div>
+    </>
   );
 };
-
 export default Agencies;

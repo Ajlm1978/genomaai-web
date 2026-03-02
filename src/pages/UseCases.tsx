@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import UseCasesSection from "@/components/UseCasesSection";
 import CTASection from "@/components/CTASection";
 import { useTranslation } from "react-i18next";
@@ -6,6 +7,16 @@ const UseCases = () => {
   const { t } = useTranslation("homepage");
 
   return (
+    <>
+    <Helmet>
+      <title>Casos de Uso | Agentes IA para Leads, Citas y Atención al Cliente - Genoma AI</title>
+      <meta name="description" content="Descubre cómo los agentes IA de Genoma AI califican leads, agendan citas, atienden clientes y reactivan bases de datos automáticamente 24/7." />
+      <meta property="og:title" content="Casos de Uso | Agentes IA para Leads, Citas y Atención al Cliente - Genoma AI" />
+      <meta property="og:description" content="Descubre cómo los agentes IA de Genoma AI califican leads, agendan citas, atienden clientes y reactivan bases de datos automáticamente 24/7." />
+      <meta property="og:url" content="https://genomai.ai/use-cases" />
+      <meta property="og:image" content="https://genomai.ai/og-image.png" />
+      <link rel="canonical" href="https://genomai.ai/use-cases" />
+    </Helmet>
     <div className="pt-24">
       {/* Hero */}
       <section className="relative py-20">
@@ -25,6 +36,7 @@ const UseCases = () => {
       <UseCasesSection />
       <CTASection />
     </div>
+    </>
   );
 };
 

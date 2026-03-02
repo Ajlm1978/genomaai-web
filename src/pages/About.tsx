@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { useTranslation } from "react-i18next";
 import { Lightbulb, Zap, Target, Handshake } from "lucide-react";
 import genomaHero from "../assets/genoma-hero.jpg";
@@ -10,6 +11,16 @@ const About = () => {
   const { t } = useTranslation("homepage");
 
   return (
+    <>
+    <Helmet>
+      <title>Nosotros | Genoma AI - Automatización Inteligente desde Florida</title>
+      <meta name="description" content="Genoma AI es la plataforma de agentes IA conversacionales para el mercado hispano. Con sede en Winter Park, Florida." />
+      <meta property="og:title" content="Nosotros | Genoma AI" />
+      <meta property="og:description" content="Genoma AI es la plataforma de agentes IA conversacionales para el mercado hispano. Con sede en Winter Park, Florida." />
+      <meta property="og:url" content="https://genomai.ai/about" />
+      <meta property="og:image" content="https://genomai.ai/og-image.png" />
+      <link rel="canonical" href="https://genomai.ai/about" />
+    </Helmet>
     <div className="pt-24">
       {/* Hero */}
       <section className="relative py-20">
@@ -75,6 +86,7 @@ const About = () => {
 
       <CTASection />
     </div>
+    </>
   );
 };
 
