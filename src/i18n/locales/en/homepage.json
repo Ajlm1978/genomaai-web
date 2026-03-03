@@ -210,6 +210,42 @@
         "name": "Roberto Silva",
         "role": "Operations Manager",
         "company": "SilvaHealth Clinics"
+      },
+      "t4": {
+        "text": "We implemented the voice agent for lead qualification in our real estate business. In the first month we closed 3 properties that were previously lost due to slow follow-up.",
+        "name": "Daniela Romero",
+        "role": "Commercial Director",
+        "company": "Romero Properties"
+      },
+      "t5": {
+        "text": "The onboarding was incredibly fast. In less than a week we had the WhatsApp agent answering inquiries 24/7. Our team now focuses only on closing, not on replying to messages.",
+        "name": "Miguel Ángel Torres",
+        "role": "CEO",
+        "company": "Torres Consulting Group"
+      },
+      "t6": {
+        "text": "As an agency, the white-label model changed our business. We now offer conversational AI to our clients under our own brand with 60% margins. It's our flagship product.",
+        "name": "Valentina Cruz",
+        "role": "Founder",
+        "company": "CruzTech Digital Agency"
+      },
+      "t7": {
+        "text": "We have a dental clinic with 4 locations. The Genoma AI agent handles 80% of appointment confirmations automatically. We reduced no-shows by 35%.",
+        "name": "Dr. Andrés Fuentes",
+        "role": "Medical Director",
+        "company": "Fuentes & Associates Clinic"
+      },
+      "t8": {
+        "text": "I tried other AI platforms before Genoma AI. The difference is that here the agent truly sounds human. My clients don't know they're talking to an AI until I tell them.",
+        "name": "Patricia Herrera",
+        "role": "Business Owner",
+        "company": "Herrera Insurance Services"
+      },
+      "t9": {
+        "text": "We scaled from 200 to 1,500 monthly leads without hiring a single additional sales agent. Genoma AI qualifies, schedules, and follows up. Our team just closes.",
+        "name": "Javier Montoya",
+        "role": "VP of Sales",
+        "company": "Montoya Financial Group"
       }
     }
   },
