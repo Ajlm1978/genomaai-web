@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import { Check } from "lucide-react";
+import { Check, Sparkles } from "lucide-react";
 
 const businessPlans = ["starter", "pro", "business"];
 const agencyPlans = ["agency", "agencyPro"];
@@ -65,6 +65,51 @@ const PricingSection = ({ showAll = true }: PricingProps) => {
     );
   };
 
+  const renderEnterprisePlan = () => {
+    const features = t("pricing.plans.enterprise.features", { returnObjects: true }) as string[];
+    return (
+      <div className="relative p-8 rounded-2xl border border-amber-500/30 bg-gradient-to-br from-amber-500/5 to-orange-500/5 hover:border-amber-500/50 transition-all duration-300 max-w-4xl mx-auto mt-12">
+        <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-4 py-1 bg-gradient-to-r from-amber-500 to-orange-400 text-[#0a1628] text-xs font-bold rounded-full flex items-center gap-1">
+          <Sparkles className="w-3 h-3" />
+          Lo hacemos por ti
+        </div>
+        <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-8">
+          <div className="flex-1">
+            <h3 className="text-2xl font-bold text-white mb-2">
+              {t("pricing.plans.enterprise.name")}
+            </h3>
+            <p className="text-gray-400 text-sm mb-4">
+              {t("pricing.plans.enterprise.description")}
+            </p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+              {features.map((feature, i) => (
+                <div key={i} className="flex items-start gap-2">
+                  <Check className="w-4 h-4 shrink-0 mt-0.5 text-amber-400" />
+                  <span className="text-gray-300 text-sm">{feature}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+          <div className="flex flex-col items-center gap-4 min-w-[200px]">
+            <div className="text-center">
+              <p className="text-amber-400 text-sm font-medium mb-1">Precio</p>
+              <p className="text-3xl font-bold text-white">A medida</p>
+              <p className="text-gray-400 text-xs mt-1">Basado en tus necesidades</p>
+            </div>
+            <a
+              href="https://wa.me/13055256302?text=Quiero%20una%20cotizaci%C3%B3n%20para%20Enterprise%20de%20Genoma%20AI"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full text-center px-6 py-3 text-sm font-semibold rounded-xl bg-gradient-to-r from-amber-500 to-orange-400 text-[#0a1628] hover:shadow-lg hover:shadow-amber-500/25 transition-all"
+            >
+              Solicitar Cotización
+            </a>
+          </div>
+        </div>
+      </div>
+    );
+  };
+
   return (
     <section className="relative py-24" id="pricing">
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -98,6 +143,9 @@ const PricingSection = ({ showAll = true }: PricingProps) => {
             </div>
           </div>
         )}
+
+        {/* Enterprise Plan */}
+        {showAll && renderEnterprisePlan()}
       </div>
     </section>
   );

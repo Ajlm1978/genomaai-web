@@ -102,57 +102,60 @@
     "popular": "Más Popular",
     "businessTitle": "Para Empresas",
     "agencyTitle": "Para Agencias",
+    "enterpriseTitle": "Solución Empresarial",
     "cta": "Empezar",
     "ctaContact": "Contactar Ventas",
+    "ctaEnterprise": "Solicitar Cotización",
     "plans": {
       "starter": {
         "name": "Starter",
-        "price": "$47",
+        "price": "$97",
         "description": "Perfecto para pequeños negocios que comienzan con IA",
         "features": [
           "Agentes IA de texto",
           "WhatsApp + Chat Web",
-          "CRM gratis incluido",
+          "CRM incluido",
           "Hasta 500 conversaciones/mes",
           "Soporte por email"
         ]
       },
       "pro": {
         "name": "Pro",
-        "price": "$97",
+        "price": "$197",
         "description": "Para negocios en crecimiento que necesitan voz + texto",
         "features": [
           "Agentes IA de texto + voz",
           "Todos los canales incluidos",
-          "CRM gratis incluido",
+          "CRM incluido",
           "Integración GoHighLevel",
           "Hasta 2,000 conversaciones/mes",
-          "Soporte prioritario"
+          "Soporte por email"
         ]
       },
       "business": {
         "name": "Business",
-        "price": "$147",
+        "price": "$297",
         "description": "Para empresas establecidas que necesitan todo",
         "features": [
           "Todo lo del Pro",
           "Conversaciones ilimitadas",
           "Integraciones avanzadas",
           "Clonación de voz personalizada",
-          "Gerente de cuenta dedicado",
+          "Onboarding personalizado",
           "Soporte telefónico prioritario"
         ]
       },
       "agency": {
         "name": "Agency",
-        "price": "$197",
+        "price": "$397",
         "description": "Comienza a revender agentes IA bajo tu marca",
         "features": [
           "5 subcuentas de clientes",
           "Marca blanca completa",
           "Tu dominio y logo",
           "Panel de gestión de clientes",
-          "Soporte para agencias",
+          "Soporte para agencias (via tickets)",
+          "Onboarding personalizado",
           "Materiales de capacitación"
         ]
       },
@@ -163,10 +166,23 @@
         "features": [
           "15 subcuentas de clientes",
           "Marca blanca completa",
-          "Soporte dedicado prioritario",
-          "Onboarding personalizado",
-          "Analíticas de ingresos",
-          "Acceso a API"
+          "Tu dominio y logo",
+          "Soporte para agencias",
+          "Onboarding personalizado"
+        ]
+      },
+      "enterprise": {
+        "name": "Enterprise",
+        "price": "A medida",
+        "description": "Solución personalizada para grandes empresas y operaciones a escala",
+        "features": [
+          "Subcuentas ilimitadas",
+          "Infraestructura dedicada",
+          "Integraciones personalizadas",
+          "SLA garantizado",
+          "Gerente de cuenta dedicado",
+          "Soporte 24/7 prioritario",
+          "Capacitación del equipo"
         ]
       }
     }
@@ -196,6 +212,42 @@
         "name": "Roberto Silva",
         "role": "Gerente de Operaciones",
         "company": "SilvaHealth Clinics"
+      },
+      "t4": {
+        "text": "Implementamos el agente de voz para calificación de leads en nuestra inmobiliaria. En el primer mes cerramos 3 propiedades que antes se perdían por falta de seguimiento rápido.",
+        "name": "Daniela Romero",
+        "role": "Directora Comercial",
+        "company": "Romero Propiedades"
+      },
+      "t5": {
+        "text": "El onboarding fue rapidísimo. En menos de una semana ya teníamos el agente de WhatsApp respondiendo consultas 24/7. Nuestro equipo ahora se enfoca solo en cerrar, no en responder mensajes.",
+        "name": "Miguel Ángel Torres",
+        "role": "CEO",
+        "company": "Torres Consulting Group"
+      },
+      "t6": {
+        "text": "Como agencia, el modelo de marca blanca nos cambió el negocio. Ahora ofrecemos IA conversacional a nuestros clientes con nuestro propio branding y márgenes del 60%. Es nuestro producto estrella.",
+        "name": "Valentina Cruz",
+        "role": "Fundadora",
+        "company": "CruzTech Digital Agency"
+      },
+      "t7": {
+        "text": "Tenemos una clínica dental con 4 sucursales. El agente de Genoma AI maneja el 80% de las confirmaciones de citas automáticamente. Redujimos los no-shows en un 35%.",
+        "name": "Dr. Andrés Fuentes",
+        "role": "Director Médico",
+        "company": "Clínica Fuentes & Asociados"
+      },
+      "t8": {
+        "text": "Probé otras plataformas de IA antes de llegar a Genoma AI. La diferencia es que aquí el agente realmente suena humano. Mis clientes no saben que están hablando con una IA hasta que se los digo.",
+        "name": "Patricia Herrera",
+        "role": "Dueña de Negocio",
+        "company": "Herrera Insurance Services"
+      },
+      "t9": {
+        "text": "Escalamos de 200 a 1,500 leads mensuales sin contratar un solo agente de ventas adicional. Genoma AI califica, agenda y hace seguimiento. Nuestro equipo solo cierra.",
+        "name": "Javier Montoya",
+        "role": "VP de Ventas",
+        "company": "Montoya Financial Group"
       }
     }
   },

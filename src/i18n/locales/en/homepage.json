@@ -107,52 +107,53 @@
     "plans": {
       "starter": {
         "name": "Starter",
-        "price": "$47",
+        "price": "$97",
         "description": "Perfect for small businesses getting started with AI",
         "features": [
-          "Text-based AI agents",
+          "Text AI agents",
           "WhatsApp + Web Chat",
-          "Free CRM included",
-          "Up to 500 conversations/mo",
+          "CRM included",
+          "Up to 500 conversations/month",
           "Email support"
         ]
       },
       "pro": {
         "name": "Pro",
-        "price": "$97",
+        "price": "$197",
         "description": "For growing businesses that need voice + text AI",
         "features": [
-          "Text + Voice AI agents",
+          "Text + voice AI agents",
           "All channels included",
-          "Free CRM included",
+          "CRM included",
           "GoHighLevel integration",
-          "Up to 2,000 conversations/mo",
-          "Priority support"
+          "Up to 2,000 conversations/month",
+          "Email support"
         ]
       },
       "business": {
         "name": "Business",
-        "price": "$147",
+        "price": "$297",
         "description": "For established businesses that need everything",
         "features": [
           "Everything in Pro",
           "Unlimited conversations",
           "Advanced integrations",
           "Custom voice cloning",
-          "Dedicated account manager",
+          "Personalized onboarding",
           "Priority phone support"
         ]
       },
       "agency": {
         "name": "Agency",
-        "price": "$197",
+        "price": "$397",
         "description": "Start reselling AI agents under your brand",
         "features": [
-          "5 client sub-accounts",
-          "Full white-label branding",
-          "Your domain & logo",
-          "Client management dashboard",
-          "Agency support",
+          "5 client subaccounts",
+          "Full white-label",
+          "Your domain and logo",
+          "Client management panel",
+          "Agency support (via tickets)",
+          "Personalized onboarding",
           "Training materials"
         ]
       },
@@ -161,12 +162,25 @@
         "price": "$497",
         "description": "Scale your AI agency to the next level",
         "features": [
-          "15 client sub-accounts",
-          "Full white-label branding",
-          "Priority dedicated support",
-          "Custom onboarding",
-          "Revenue analytics",
-          "API access"
+          "15 client subaccounts",
+          "Full white-label",
+          "Your domain and logo",
+          "Agency support",
+          "Personalized onboarding"
+        ]
+      },
+      "enterprise": {
+        "name": "Enterprise",
+        "price": "Custom",
+        "description": "We do it for you — fully managed AI agent implementation",
+        "features": [
+          "Unlimited subaccounts",
+          "Dedicated infrastructure",
+          "Custom integrations",
+          "Guaranteed SLA",
+          "Dedicated account manager",
+          "24/7 priority support",
+          "Team training"
         ]
       }
     }
