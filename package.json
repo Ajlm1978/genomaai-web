@@ -13,12 +13,47 @@
   },
   "reactSnap": {
     "source": "dist",
-    "minifyHtml": { "collapseWhitespace": false },
-    "puppeteerArgs": ["--no-sandbox", "--disable-setuid-sandbox"],
+    "minifyHtml": {
+      "collapseWhitespace": false
+    },
+    "puppeteerArgs": [
+      "--no-sandbox",
+      "--disable-setuid-sandbox"
+    ],
     "puppeteerExecutablePath": "/usr/bin/chromium-browser",
     "skipThirdPartyRequests": true,
     "crawl": true,
-    "routes": ["/", "/use-cases", "/pricing", "/agencies", "/about", "/privacy-policy", "/terms-of-service"]
+    "routes": [
+      "/",
+      "/use-cases",
+      "/pricing",
+      "/agencies",
+      "/about",
+      "/privacy-policy",
+      "/terms-of-service",
+      "/blog",
+      "/blog/que-es-un-agente-ia",
+      "/blog/automatizar-whatsapp-ventas",
+      "/blog/agentes-ia-vs-chatbots",
+      "/blog/roi-automatizacion-ia-pymes",
+      "/blog/como-calificar-leads-con-ia",
+      "/comparar",
+      "/comparar/genoma-ai-vs-manychat",
+      "/comparar/genoma-ai-vs-tidio",
+      "/comparar/genoma-ai-vs-intercom",
+      "/industrias",
+      "/industrias/agencias-de-marketing",
+      "/industrias/clinicas-y-salud",
+      "/industrias/inmobiliarias",
+      "/industrias/profesionales-independientes",
+      "/casos-de-uso",
+      "/casos-de-uso/recepcionista-virtual",
+      "/casos-de-uso/calificacion-de-leads",
+      "/casos-de-uso/agendamiento-automatico",
+      "/casos-de-uso/atencion-al-cliente-24-7",
+      "/casos-de-uso/reactivacion-de-base-de-datos",
+      "/casos-de-uso/seguimiento-post-venta"
+    ]
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",

@@ -2,11 +2,12 @@ import { useState } from "react";
 import genomaLogo from "../assets/genoma-logo.jpg";
 import { useTranslation } from "react-i18next";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, Globe } from "lucide-react";
+import { Menu, X, Globe, ChevronDown } from "lucide-react";
 
 const Header = () => {
   const { t, i18n } = useTranslation("common");
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [dropdownOpen, setDropdownOpen] = useState(false);
   const location = useLocation();
 
   const toggleLang = () => {
@@ -21,7 +22,14 @@ const Header = () => {
     { to: "/about", label: t("navigation.about") },
   ];
 
-  const isActive = (path: string) => location.pathname === path;
+  const contentDropdown = [
+    { to: "/blog", label: "Blog" },
+    { to: "/comparar", label: "Comparativas" },
+    { to: "/industrias", label: "Industrias" },
+    { to: "/casos-de-uso", label: "Casos de Uso" },
+  ];
+
+  const isActive = (path: string) => location.pathname === path || location.pathname.startsWith(path + "/");
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-[#0a1628]/80 backdrop-blur-xl border-b border-cyan-500/10">
@@ -60,6 +68,39 @@ const Header = () => {
                 {link.label}
               </Link>
             ))}
+            {/* Contenido dropdown */}
+            <div
+              className="relative"
+              onMouseEnter={() => setDropdownOpen(true)}
+              onMouseLeave={() => setDropdownOpen(false)}
+            >
+              <button
+                className={`flex items-center gap-1 px-4 py-2 text-sm font-medium rounded-lg transition-all duration-200 ${
+                  contentDropdown.some(item => location.pathname.startsWith(item.to))
+                    ? "text-cyan-400 bg-cyan-400/10"
+                    : "text-gray-300 hover:text-white hover:bg-white/5"
+                }`}
+              >
+                Contenido <ChevronDown className={`w-3.5 h-3.5 transition-transform ${dropdownOpen ? "rotate-180" : ""}`} />
+              </button>
+              {dropdownOpen && (
+                <div className="absolute top-full left-0 mt-1 w-48 bg-[#0d1f3c] border border-cyan-500/20 rounded-xl shadow-xl overflow-hidden z-50">
+                  {contentDropdown.map((item) => (
+                    <Link
+                      key={item.to}
+                      to={item.to}
+                      className={`block px-4 py-2.5 text-sm transition-colors ${
+                        location.pathname.startsWith(item.to)
+                          ? "text-cyan-400 bg-cyan-500/10"
+                          : "text-gray-300 hover:text-cyan-400 hover:bg-cyan-500/5"
+                      }`}
+                    >
+                      {item.label}
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
           </nav>
 
           {/* Right side */}
@@ -105,6 +146,19 @@ const Header = () => {
                 {link.label}
               </Link>
             ))}
+            <div className="pt-2 pb-1">
+              <p className="px-4 text-xs text-gray-500 uppercase tracking-wider mb-1">Contenido</p>
+              {contentDropdown.map((item) => (
+                <Link
+                  key={item.to}
+                  to={item.to}
+                  onClick={() => setMobileOpen(false)}
+                  className="block px-4 py-2.5 text-sm text-gray-400 hover:text-cyan-400 hover:bg-cyan-500/5 rounded-lg transition-colors"
+                >
+                  {item.label}
+                </Link>
+              ))}
+            </div>
             <Link
               to="/pricing"
               onClick={() => setMobileOpen(false)}

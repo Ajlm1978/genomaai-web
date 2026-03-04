@@ -5,11 +5,10 @@ import genomaLogo from "../assets/genoma-logo.jpg";
 
 const Footer = () => {
   const { t } = useTranslation(["common", "homepage"]);
-
   return (
     <footer className="relative z-10 bg-[#060e1a] border-t border-cyan-500/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
           {/* Brand */}
           <div className="lg:col-span-1">
             <Link to="/" className="flex items-center gap-3 mb-4">
@@ -33,6 +32,20 @@ const Footer = () => {
               <li><Link to="/use-cases" className="text-gray-400 hover:text-cyan-400 text-sm transition-colors">{t("common:navigation.useCases")}</Link></li>
               <li><Link to="/pricing" className="text-gray-400 hover:text-cyan-400 text-sm transition-colors">{t("common:navigation.pricing")}</Link></li>
               <li><Link to="/agencies" className="text-gray-400 hover:text-cyan-400 text-sm transition-colors">{t("common:navigation.agencies")}</Link></li>
+              <li><Link to="/casos-de-uso" className="text-gray-400 hover:text-cyan-400 text-sm transition-colors">Casos de Uso</Link></li>
+              <li><Link to="/industrias" className="text-gray-400 hover:text-cyan-400 text-sm transition-colors">Industrias</Link></li>
+            </ul>
+          </div>
+
+          {/* Contenido Links — critical for react-snap crawling */}
+          <div>
+            <h4 className="text-white font-semibold mb-4">Contenido</h4>
+            <ul className="space-y-3">
+              <li><Link to="/blog" className="text-gray-400 hover:text-cyan-400 text-sm transition-colors">Blog</Link></li>
+              <li><Link to="/blog/que-es-un-agente-ia" className="text-gray-400 hover:text-cyan-400 text-sm transition-colors">¿Qué es un Agente IA?</Link></li>
+              <li><Link to="/blog/agentes-ia-vs-chatbots" className="text-gray-400 hover:text-cyan-400 text-sm transition-colors">Agentes IA vs Chatbots</Link></li>
+              <li><Link to="/comparar" className="text-gray-400 hover:text-cyan-400 text-sm transition-colors">Comparativas</Link></li>
+              <li><Link to="/comparar/genoma-ai-vs-manychat" className="text-gray-400 hover:text-cyan-400 text-sm transition-colors">vs ManyChat</Link></li>
             </ul>
           </div>
 
@@ -43,6 +56,8 @@ const Footer = () => {
               <li><Link to="/about" className="text-gray-400 hover:text-cyan-400 text-sm transition-colors">{t("common:navigation.about")}</Link></li>
               <li><Link to="/privacy-policy" className="text-gray-400 hover:text-cyan-400 text-sm transition-colors">{t("common:legal.privacyPolicy")}</Link></li>
               <li><Link to="/terms-of-service" className="text-gray-400 hover:text-cyan-400 text-sm transition-colors">{t("common:legal.termsOfService")}</Link></li>
+              <li><Link to="/industrias/agencias-de-marketing" className="text-gray-400 hover:text-cyan-400 text-sm transition-colors">Para Agencias</Link></li>
+              <li><Link to="/industrias/clinicas-y-salud" className="text-gray-400 hover:text-cyan-400 text-sm transition-colors">Para Clínicas</Link></li>
             </ul>
           </div>
 

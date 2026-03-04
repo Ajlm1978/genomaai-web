@@ -14,6 +14,23 @@ import Agencies from "./pages/Agencies";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsOfService from "./pages/TermsOfService";
 import NotFound from "./pages/NotFound";
+
+// Blog
+import BlogIndex from "./pages/blog/BlogIndex";
+import BlogPost from "./pages/blog/BlogPost";
+
+// Comparar
+import CompararIndex from "./pages/comparar/CompararIndex";
+import CompararPage from "./pages/comparar/CompararPage";
+
+// Industrias
+import IndustriasIndex from "./pages/industrias/IndustriasIndex";
+import IndustriaPage from "./pages/industrias/IndustriaPage";
+
+// Casos de Uso
+import CasosDeUsoIndex from "./pages/casos-de-uso/CasosDeUsoIndex";
+import CasoDeUsoPage from "./pages/casos-de-uso/CasoDeUsoPage";
+
 import "./i18n";
 
 const queryClient = new QueryClient({
@@ -40,6 +57,22 @@ const App = () => (
               <Route path="/agencies" element={<Agencies />} />
               <Route path="/privacy-policy" element={<PrivacyPolicy />} />
               <Route path="/terms-of-service" element={<TermsOfService />} />
+
+              {/* Blog */}
+              <Route path="/blog" element={<BlogIndex />} />
+              <Route path="/blog/:slug" element={<BlogPost />} />
+
+              {/* Comparativas */}
+              <Route path="/comparar" element={<CompararIndex />} />
+              <Route path="/comparar/:slug" element={<CompararPage />} />
+
+              {/* Industrias */}
+              <Route path="/industrias" element={<IndustriasIndex />} />
+              <Route path="/industrias/:slug" element={<IndustriaPage />} />
+
+              {/* Casos de Uso */}
+              <Route path="/casos-de-uso" element={<CasosDeUsoIndex />} />
+              <Route path="/casos-de-uso/:slug" element={<CasoDeUsoPage />} />
             </Route>
             <Route path="*" element={<NotFound />} />
           </Routes>
